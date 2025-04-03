@@ -66,7 +66,7 @@ def check_export_job_status(server_url: str, session_id: str, export_id):
         return export_status
 
 
-def load_export_file(server_url: str, session_id: str, export_id: str, export_path: str):
+def load_export_package(server_url: str, session_id: str, export_id: str, export_path: str):
     api_url = server_url + "/public/core/v3/export/" + export_id + "/package"
     headers = {
         "INFA-SESSION-ID": session_id
@@ -76,7 +76,7 @@ def load_export_file(server_url: str, session_id: str, export_id: str, export_pa
     if response.status_code == 200:
         with open(export_path, "wb") as f:
             f.write(response.content)
-        print(f"[V] File saved successfully in path '{export_path}'")
+        print(f"[V] Package saved successfully in path '{export_path}'")
         return 1
     else:
         print(f"[X] Error: status {response.status_code}")
@@ -89,6 +89,7 @@ def load_export_file(server_url: str, session_id: str, export_id: str, export_pa
 if __name__ == "__main__":
 
     # === 0. set up variables  ===
+    print("\n=== 0. set up variables  ===")
     env_path = Path('./env/.env')
     load_dotenv(dotenv_path=env_path)
     IC_USERNAME = os.getenv("IC_USERNAME")
@@ -105,6 +106,7 @@ if __name__ == "__main__":
 
 
     # === 1. Authorization ===
+    print("\n=== 1. Authorization ===")
     auth_payload = {
         "@type": "login",
         "username": IC_USERNAME,
@@ -121,15 +123,18 @@ if __name__ == "__main__":
         print(f"IC_SESSION_ID: {IC_SESSION_ID}")
 
         # === 2. Get Object ID to Export ===
+        print("\n=== 2. Get Object ID to Export ===")
         ic_object_id = get_object_id(IC_SERVER_URL, IC_SESSION_ID, IC_OBJECT_NAME)
         print(f"ic_object_id: {ic_object_id}")
 
         # === 3. Create Export Job ===
+        print("\n=== 3. Create Export Job ===")
         ic_export_job_id = create_export_job(IC_SERVER_URL, IC_SESSION_ID, EXPORT_JOB_NAME, ic_object_id)
         print(f"ic_export_job_id: {ic_export_job_id}")
         time.sleep(5)
 
         # === 4. Checking Export Job status ===
+        print("\n=== 4. Checking Export Job status ===")
         # 10 checks during 1 minute
         n_attempts = 10
         ic_export_job_status = ""
@@ -143,7 +148,7 @@ if __name__ == "__main__":
         if ic_export_job_status == "SUCCESSFUL":
             # === 5. Load Export File ===
             export_path = EXPORT_FOLDER + EXPOR_FILE
-            status = load_export_file(IC_SERVER_URL, IC_SESSION_ID, ic_export_job_id, export_path)
+            status = load_export_package(IC_SERVER_URL, IC_SESSION_ID, ic_export_job_id, export_path)
             if status == 1:
                 print("-=[~+~] Export completed successfully [~+~]=-")
             else:
