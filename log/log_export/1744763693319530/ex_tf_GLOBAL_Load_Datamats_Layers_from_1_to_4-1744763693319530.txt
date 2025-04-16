@@ -1,0 +1,17 @@
+> OIE_002 INFO 2025-04-16T00:34:58.313Z Starting export operation.
+Execution Client: API
+Job Name: tf_GLOBAL_Load_Datamats_Layers_from_1_to_4-1744763693319530
+Organization: Enfint GmbH
+Job Id: aRyhbbqeMb4jMz76gkCZWZ
+User: ajurlov
+> OIE_004 INFO 2025-04-16T00:34:58.370Z Successfully exported object [/Explore/ETL Framework] of type [Project] id [0vGWEDUKC99fsgVdjwdiQr]
+> OIE_004 INFO 2025-04-16T00:34:58.396Z Successfully exported object [/Explore/ETL Framework/SNE_00_GLOBAL_TF_Orchestration] of type [Folder] id [f9wa2eGABgudqTG1KrGuW5]
+> OIE_004 INFO 2025-04-16T00:34:58.438Z Successfully exported object [/Explore/ETL Framework/SNE_00_GLOBAL_TF_Orchestration/tf_GLOBAL_Load_Datamats_Layers_from_1_to_4] of type [TASKFLOW] id [0wIuCc3kU2pba68J5W6xcl]
+> OIE_003 INFO 2025-04-16T00:34:58.438Z Finished export operation.
+Job Name: tf_GLOBAL_Load_Datamats_Layers_from_1_to_4-1744763693319530
+Start Time: 04/16/25 12:34 AM
+End Time: 04/16/25 12:34 AM
+Started by: ajurlov
+Start Method: API
+Source Organization: Enfint GmbH
+Status: SUCCESSFUL

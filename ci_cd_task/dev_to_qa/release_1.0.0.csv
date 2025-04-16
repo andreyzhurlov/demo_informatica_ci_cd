@@ -1,0 +1,3 @@
+objectGuid,objectName,path
+6PVdmuxEuSSfi0FCb1CsS1,m_startRUN_insert_new_RUN_ID,ETL Framework\SNE_Transfer_To_Datamarts_Layer_1
+0wIuCc3kU2pba68J5W6xcl,tf_GLOBAL_Load_Datamats_Layers_from_1_to_4,ETL Framework\SNE_00_GLOBAL_TF_Orchestration

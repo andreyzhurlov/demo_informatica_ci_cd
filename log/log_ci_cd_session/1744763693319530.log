@@ -1,0 +1,63 @@
+2025-04-16 02:34:53,319 [MainThread  ] [INFO ] >> CI_CD_SESSION_ID: 1744763693319530
+2025-04-16 02:34:53,319 [MainThread  ] [INFO ] 
+=== 1. Authorization ===
+2025-04-16 02:34:53,319 [MainThread  ] [DEBUG] Starting new HTTPS connection (1): dm-em.informaticacloud.com:443
+2025-04-16 02:34:53,700 [MainThread  ] [DEBUG] https://dm-em.informaticacloud.com:443 "POST /ma/api/v2/user/login HTTP/1.1" 200 None
+2025-04-16 02:34:53,700 [MainThread  ] [INFO ] Authentication successful
+2025-04-16 02:34:53,700 [MainThread  ] [INFO ] ic_server_url: https://emw1.dm-em.informaticacloud.com/saas
+2025-04-16 02:34:53,700 [MainThread  ] [INFO ] ic_session_id: iWdsPvPqp0XhL8SEKJDCe9
+2025-04-16 02:34:53,700 [MainThread  ] [INFO ] 
+=== 2. Get list of objects to export ===
+2025-04-16 02:34:53,700 [MainThread  ] [INFO ] [('6PVdmuxEuSSfi0FCb1CsS1', 'm_startRUN_insert_new_RUN_ID'), ('0wIuCc3kU2pba68J5W6xcl', 'tf_GLOBAL_Load_Datamats_Layers_from_1_to_4')]
+2025-04-16 02:34:53,700 [MainThread  ] [INFO ] 
+=== 3. Run Export Job for each object ===
+2025-04-16 02:34:53,700 [MainThread  ] [INFO ] 
+(3.1) >> export_job_name: m_startRUN_insert_new_RUN_ID-1744763693319530
+2025-04-16 02:34:53,715 [MainThread  ] [DEBUG] Starting new HTTPS connection (1): emw1.dm-em.informaticacloud.com:443
+2025-04-16 02:34:54,146 [MainThread  ] [DEBUG] https://emw1.dm-em.informaticacloud.com:443 "POST /saas/public/core/v3/export HTTP/1.1" 200 None
+2025-04-16 02:34:54,168 [MainThread  ] [INFO ] (3.1) >> ic_export_job_id: 05fB7Fy8h6ubhdyer4ZLqm
+2025-04-16 02:34:57,169 [MainThread  ] [INFO ] 
+===  4.1 Checking Export Job status ===
+2025-04-16 02:34:57,169 [MainThread  ] [DEBUG] Starting new HTTPS connection (1): emw1.dm-em.informaticacloud.com:443
+2025-04-16 02:34:57,380 [MainThread  ] [DEBUG] https://emw1.dm-em.informaticacloud.com:443 "GET /saas/public/core/v3/export/05fB7Fy8h6ubhdyer4ZLqm HTTP/1.1" 200 None
+2025-04-16 02:34:57,398 [MainThread  ] [INFO ] (4.1) >> [1] check_export_job_status: SUCCESSFUL
+2025-04-16 02:34:57,398 [MainThread  ] [INFO ] 
+===  5.1 Load Export Package ===
+2025-04-16 02:34:57,399 [MainThread  ] [INFO ] >> Export directory created: ././export_to_import/dev_to_qa/1744763693319530/
+2025-04-16 02:34:57,401 [MainThread  ] [DEBUG] Starting new HTTPS connection (1): emw1.dm-em.informaticacloud.com:443
+2025-04-16 02:34:57,652 [MainThread  ] [DEBUG] https://emw1.dm-em.informaticacloud.com:443 "GET /saas/public/core/v3/export/05fB7Fy8h6ubhdyer4ZLqm/package HTTP/1.1" 200 None
+2025-04-16 02:34:57,664 [MainThread  ] [INFO ] [V] Package saved successfully in path '././export_to_import/dev_to_qa/1744763693319530/m_startRUN_insert_new_RUN_ID-1744763693319530.zip'
+2025-04-16 02:34:57,664 [MainThread  ] [INFO ] (5.1) -=[~+~] Package exported successfully [~+~]=-
+2025-04-16 02:34:57,664 [MainThread  ] [INFO ] 
+===  6.1 Load Export Package Log ===
+2025-04-16 02:34:57,664 [MainThread  ] [INFO ] >> Export Log directory created: ././log/log_export/1744763693319530/
+2025-04-16 02:34:57,664 [MainThread  ] [DEBUG] Starting new HTTPS connection (1): emw1.dm-em.informaticacloud.com:443
+2025-04-16 02:34:57,912 [MainThread  ] [DEBUG] https://emw1.dm-em.informaticacloud.com:443 "GET /saas/public/core/v3/export/05fB7Fy8h6ubhdyer4ZLqm/log HTTP/1.1" 200 None
+2025-04-16 02:34:57,912 [MainThread  ] [INFO ] [V] Export Log saved successfully in path '././log/log_export/1744763693319530/ex_m_startRUN_insert_new_RUN_ID-1744763693319530.txt'
+2025-04-16 02:34:57,927 [MainThread  ] [INFO ] (6.1) [+] Export log saved
+2025-04-16 02:34:57,927 [MainThread  ] [INFO ] ==========================================================
+2025-04-16 02:34:57,927 [MainThread  ] [INFO ] 
+(3.2) >> export_job_name: tf_GLOBAL_Load_Datamats_Layers_from_1_to_4-1744763693319530
+2025-04-16 02:34:57,929 [MainThread  ] [DEBUG] Starting new HTTPS connection (1): emw1.dm-em.informaticacloud.com:443
+2025-04-16 02:34:58,353 [MainThread  ] [DEBUG] https://emw1.dm-em.informaticacloud.com:443 "POST /saas/public/core/v3/export HTTP/1.1" 200 None
+2025-04-16 02:34:58,366 [MainThread  ] [INFO ] (3.2) >> ic_export_job_id: aRyhbbqeMb4jMz76gkCZWZ
+2025-04-16 02:35:01,380 [MainThread  ] [INFO ] 
+===  4.2 Checking Export Job status ===
+2025-04-16 02:35:01,382 [MainThread  ] [DEBUG] Starting new HTTPS connection (1): emw1.dm-em.informaticacloud.com:443
+2025-04-16 02:35:01,597 [MainThread  ] [DEBUG] https://emw1.dm-em.informaticacloud.com:443 "GET /saas/public/core/v3/export/aRyhbbqeMb4jMz76gkCZWZ HTTP/1.1" 200 None
+2025-04-16 02:35:01,617 [MainThread  ] [INFO ] (4.2) >> [1] check_export_job_status: SUCCESSFUL
+2025-04-16 02:35:01,617 [MainThread  ] [INFO ] 
+===  5.2 Load Export Package ===
+2025-04-16 02:35:01,618 [MainThread  ] [DEBUG] Starting new HTTPS connection (1): emw1.dm-em.informaticacloud.com:443
+2025-04-16 02:35:01,832 [MainThread  ] [DEBUG] https://emw1.dm-em.informaticacloud.com:443 "GET /saas/public/core/v3/export/aRyhbbqeMb4jMz76gkCZWZ/package HTTP/1.1" 200 None
+2025-04-16 02:35:01,849 [MainThread  ] [INFO ] [V] Package saved successfully in path '././export_to_import/dev_to_qa/1744763693319530/tf_GLOBAL_Load_Datamats_Layers_from_1_to_4-1744763693319530.zip'
+2025-04-16 02:35:01,850 [MainThread  ] [INFO ] (5.2) -=[~+~] Package exported successfully [~+~]=-
+2025-04-16 02:35:01,850 [MainThread  ] [INFO ] 
+===  6.2 Load Export Package Log ===
+2025-04-16 02:35:01,851 [MainThread  ] [DEBUG] Starting new HTTPS connection (1): emw1.dm-em.informaticacloud.com:443
+2025-04-16 02:35:02,092 [MainThread  ] [DEBUG] https://emw1.dm-em.informaticacloud.com:443 "GET /saas/public/core/v3/export/aRyhbbqeMb4jMz76gkCZWZ/log HTTP/1.1" 200 None
+2025-04-16 02:35:02,107 [MainThread  ] [INFO ] [V] Export Log saved successfully in path '././log/log_export/1744763693319530/ex_tf_GLOBAL_Load_Datamats_Layers_from_1_to_4-1744763693319530.txt'
+2025-04-16 02:35:02,107 [MainThread  ] [INFO ] (6.2) [+] Export log saved
+2025-04-16 02:35:02,107 [MainThread  ] [INFO ] ==========================================================
+2025-04-16 02:35:02,107 [MainThread  ] [INFO ] 
+=== Export is finished | CI_CD_SESSION_ID: 1744763693319530 ===
