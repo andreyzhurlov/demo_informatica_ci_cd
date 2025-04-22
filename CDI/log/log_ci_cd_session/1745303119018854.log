@@ -1,0 +1,81 @@
+2025-04-22 08:25:19,018 [MainThread  ] [INFO   ] >> CI_CD_SESSION_ID: 1745303119018854
+2025-04-22 08:25:19,018 [MainThread  ] [INFO   ] 
+=== 1. Authorization ===
+2025-04-22 08:25:19,018 [MainThread  ] [DEBUG  ] Starting new HTTPS connection (1): dm-em.informaticacloud.com:443
+2025-04-22 08:25:19,450 [MainThread  ] [DEBUG  ] https://dm-em.informaticacloud.com:443 "POST /ma/api/v2/user/login HTTP/1.1" 200 None
+2025-04-22 08:25:19,450 [MainThread  ] [INFO   ] Authentication successful
+2025-04-22 08:25:19,450 [MainThread  ] [INFO   ] ic_server_url: https://emw1.dm-em.informaticacloud.com/saas
+2025-04-22 08:25:19,450 [MainThread  ] [INFO   ] ic_session_id: a7Vq1EwGSwEhDC5QukYouU
+2025-04-22 08:25:19,450 [MainThread  ] [INFO   ] 
+=== 2. Get list of objects to export ===
+2025-04-22 08:25:19,474 [MainThread  ] [INFO   ] 
+=== 3. Create cdi_objects collection ===
+2025-04-22 08:25:19,476 [MainThread  ] [INFO   ] (3) add Mappings
+2025-04-22 08:25:19,480 [MainThread  ] [DEBUG  ] Starting new HTTPS connection (1): emw1.dm-em.informaticacloud.com:443
+2025-04-22 08:25:20,830 [MainThread  ] [DEBUG  ] https://emw1.dm-em.informaticacloud.com:443 "GET /saas/public/core/v3/objects?q=type=='Mapping' HTTP/1.1" 200 None
+2025-04-22 08:25:20,886 [MainThread  ] [INFO   ] (3) add Mapping Tasks
+2025-04-22 08:25:20,889 [MainThread  ] [DEBUG  ] Starting new HTTPS connection (1): emw1.dm-em.informaticacloud.com:443
+2025-04-22 08:25:22,049 [MainThread  ] [DEBUG  ] https://emw1.dm-em.informaticacloud.com:443 "GET /saas/public/core/v3/objects?q=type=='MTT' HTTP/1.1" 200 None
+2025-04-22 08:25:22,100 [MainThread  ] [INFO   ] (3) add TaskFlows
+2025-04-22 08:25:22,100 [MainThread  ] [DEBUG  ] Starting new HTTPS connection (1): emw1.dm-em.informaticacloud.com:443
+2025-04-22 08:25:22,744 [MainThread  ] [DEBUG  ] https://emw1.dm-em.informaticacloud.com:443 "GET /saas/public/core/v3/objects?q=type=='TASKFLOW' HTTP/1.1" 200 None
+2025-04-22 08:25:22,744 [MainThread  ] [INFO   ] 
+=== 4. Search id for objects ====
+2025-04-22 08:25:22,744 [MainThread  ] [INFO   ] (4) map_object_to_export: 
+{'IDMC_demo/ETL_Pipelines_idmc/m_calc_budget_usage_datamart': ('m_calc_budget_usage_datamart', '8PQLN3bB82EfLMhnVaAoil')}
+2025-04-22 08:25:22,744 [MainThread  ] [INFO   ] 
+=== 5. Run Export - Import Job for each object ===
+2025-04-22 08:25:22,744 [MainThread  ] [INFO   ] 
+(5.1) >> ic_object_path: IDMC_demo/ETL_Pipelines_idmc/m_calc_budget_usage_datamart | ic_object_name: m_calc_budget_usage_datamart | ic_object_id: 8PQLN3bB82EfLMhnVaAoil
+2025-04-22 08:25:22,744 [MainThread  ] [INFO   ] 
+(5.1) >> export_job_name: m_calc_budget_usage_datamart-1745303119018854
+2025-04-22 08:25:22,762 [MainThread  ] [DEBUG  ] Starting new HTTPS connection (1): emw1.dm-em.informaticacloud.com:443
+2025-04-22 08:25:23,165 [MainThread  ] [DEBUG  ] https://emw1.dm-em.informaticacloud.com:443 "POST /saas/public/core/v3/export HTTP/1.1" 200 None
+2025-04-22 08:25:23,181 [MainThread  ] [INFO   ] (5.1) >> ic_export_job_id: 0mxguZnLONzbz6jMcrn3aZ
+2025-04-22 08:25:26,193 [MainThread  ] [INFO   ] 
+===  6.1 Checking Export Job status ===
+2025-04-22 08:25:26,195 [MainThread  ] [DEBUG  ] Starting new HTTPS connection (1): emw1.dm-em.informaticacloud.com:443
+2025-04-22 08:25:26,400 [MainThread  ] [DEBUG  ] https://emw1.dm-em.informaticacloud.com:443 "GET /saas/public/core/v3/export/0mxguZnLONzbz6jMcrn3aZ HTTP/1.1" 200 None
+2025-04-22 08:25:26,415 [MainThread  ] [INFO   ] (6.1) >> [1] check ic_export_job_status: SUCCESSFUL
+2025-04-22 08:25:26,419 [MainThread  ] [INFO   ] 
+===  7.1 Load Export Package ===
+2025-04-22 08:25:26,423 [MainThread  ] [INFO   ] >> Export directory created: c:/Users/azhurl01/My_GitHub/demo_informatica_ci_cd/CDI/export_to_import/dev_to_qa/1745303119018854/
+2025-04-22 08:25:26,424 [MainThread  ] [DEBUG  ] Starting new HTTPS connection (1): emw1.dm-em.informaticacloud.com:443
+2025-04-22 08:25:26,667 [MainThread  ] [DEBUG  ] https://emw1.dm-em.informaticacloud.com:443 "GET /saas/public/core/v3/export/0mxguZnLONzbz6jMcrn3aZ/package HTTP/1.1" 200 None
+2025-04-22 08:25:26,698 [MainThread  ] [INFO   ] [V] Package saved successfully in path 'c:/Users/azhurl01/My_GitHub/demo_informatica_ci_cd/CDI/export_to_import/dev_to_qa/1745303119018854/m_calc_budget_usage_datamart-1745303119018854.zip'
+2025-04-22 08:25:26,698 [MainThread  ] [INFO   ] (7.1) -=[~+~] Package exported successfully [~+~]=-
+2025-04-22 08:25:26,699 [MainThread  ] [INFO   ] 
+===  8.1 Load Export Package Log ===
+2025-04-22 08:25:26,700 [MainThread  ] [INFO   ] >> Export Log directory created: c:/Users/azhurl01/My_GitHub/demo_informatica_ci_cd/CDI/log/log_export/1745303119018854/
+2025-04-22 08:25:26,703 [MainThread  ] [DEBUG  ] Starting new HTTPS connection (1): emw1.dm-em.informaticacloud.com:443
+2025-04-22 08:25:26,935 [MainThread  ] [DEBUG  ] https://emw1.dm-em.informaticacloud.com:443 "GET /saas/public/core/v3/export/0mxguZnLONzbz6jMcrn3aZ/log HTTP/1.1" 200 None
+2025-04-22 08:25:26,958 [MainThread  ] [INFO   ] [V] Export Log saved successfully in path 'c:/Users/azhurl01/My_GitHub/demo_informatica_ci_cd/CDI/log/log_export/1745303119018854/ex_m_calc_budget_usage_datamart-1745303119018854.txt'
+2025-04-22 08:25:26,960 [MainThread  ] [INFO   ] (8.1) [+] Export log saved
+2025-04-22 08:25:26,960 [MainThread  ] [INFO   ] ==========================================================
+2025-04-22 08:25:26,960 [MainThread  ] [INFO   ] 
+=== 9. Upload Import Package === 
+2025-04-22 08:25:26,960 [MainThread  ] [INFO   ] export_to_import_path: c:/Users/azhurl01/My_GitHub/demo_informatica_ci_cd/CDI/export_to_import/dev_to_qa/1745303119018854/m_calc_budget_usage_datamart-1745303119018854.zip
+2025-04-22 08:25:26,991 [MainThread  ] [DEBUG  ] Starting new HTTPS connection (1): emw1.dm-em.informaticacloud.com:443
+2025-04-22 08:25:27,333 [MainThread  ] [DEBUG  ] https://emw1.dm-em.informaticacloud.com:443 "POST /saas/public/core/v3/import/package HTTP/1.1" 200 None
+2025-04-22 08:25:27,346 [MainThread  ] [INFO   ] [V] Import package uploaded successfully
+2025-04-22 08:25:27,346 [MainThread  ] [INFO   ] (9.1) ic_import_job_id: curG0a6GDeffrBBAXPoU6f
+2025-04-22 08:25:27,346 [MainThread  ] [INFO   ] 
+=== 10. Create Import Job ===
+2025-04-22 08:25:27,349 [MainThread  ] [DEBUG  ] Starting new HTTPS connection (1): emw1.dm-em.informaticacloud.com:443
+2025-04-22 08:25:27,775 [MainThread  ] [DEBUG  ] https://emw1.dm-em.informaticacloud.com:443 "POST /saas/public/core/v3/import/curG0a6GDeffrBBAXPoU6f HTTP/1.1" 200 None
+2025-04-22 08:25:27,775 [MainThread  ] [INFO   ] [V] Import Job created successfully
+2025-04-22 08:25:27,775 [MainThread  ] [INFO   ] (10) ic_import_job_status: IN_PROGRESS
+2025-04-22 08:25:30,783 [MainThread  ] [INFO   ] 
+=== 11.1 Checking Import Job status ===
+2025-04-22 08:25:30,783 [MainThread  ] [DEBUG  ] Starting new HTTPS connection (1): emw1.dm-em.informaticacloud.com:443
+2025-04-22 08:25:30,996 [MainThread  ] [DEBUG  ] https://emw1.dm-em.informaticacloud.com:443 "GET /saas/public/core/v3/export/0mxguZnLONzbz6jMcrn3aZ HTTP/1.1" 200 None
+2025-04-22 08:25:31,027 [MainThread  ] [INFO   ] (11.1) >> [1] check ic_import_job_status: SUCCESSFUL
+2025-04-22 08:25:31,027 [MainThread  ] [INFO   ] 
+=== 12.1 Load Export Package Log ===
+2025-04-22 08:25:31,030 [MainThread  ] [INFO   ] >> Import Log directory created: c:/Users/azhurl01/My_GitHub/demo_informatica_ci_cd/CDI/log/log_import/1745303119018854/
+2025-04-22 08:25:31,032 [MainThread  ] [DEBUG  ] Starting new HTTPS connection (1): emw1.dm-em.informaticacloud.com:443
+2025-04-22 08:25:31,256 [MainThread  ] [DEBUG  ] https://emw1.dm-em.informaticacloud.com:443 "GET /saas/public/core/v3/import/curG0a6GDeffrBBAXPoU6f/log HTTP/1.1" 200 None
+2025-04-22 08:25:31,268 [MainThread  ] [INFO   ] [V] Export Log saved successfully in path 'c:/Users/azhurl01/My_GitHub/demo_informatica_ci_cd/CDI/log/log_import/1745303119018854/im_m_calc_budget_usage_datamart-1745303119018854.txt'
+2025-04-22 08:25:31,268 [MainThread  ] [INFO   ] (12.1) [+] Import log saved
+2025-04-22 08:25:31,268 [MainThread  ] [INFO   ] 
+=== Export and Import is finished | CI_CD_SESSION_ID: 1745303119018854 ===

@@ -1,0 +1,26 @@
+2025-04-21 19:05:43,252 [MainThread  ] [INFO ] >> CI_CD_SESSION_ID: 1745255143251007
+2025-04-21 19:05:43,253 [MainThread  ] [INFO ] 
+=== 1. Authorization ===
+2025-04-21 19:05:43,255 [MainThread  ] [DEBUG] Starting new HTTPS connection (1): dm-em.informaticacloud.com:443
+2025-04-21 19:05:43,618 [MainThread  ] [DEBUG] https://dm-em.informaticacloud.com:443 "POST /ma/api/v2/user/login HTTP/1.1" 200 None
+2025-04-21 19:05:43,618 [MainThread  ] [INFO ] Authentication successful
+2025-04-21 19:05:43,634 [MainThread  ] [INFO ] ic_server_url: https://emw1.dm-em.informaticacloud.com/saas
+2025-04-21 19:05:43,635 [MainThread  ] [INFO ] ic_session_id: 4g1DuX4Q6YBeK8BOheqUMy
+2025-04-21 19:05:43,635 [MainThread  ] [INFO ] 
+=== 2. Get list of objects to export ===
+2025-04-21 19:05:43,635 [MainThread  ] [INFO ] 
+=== 3. Create cdi_objects collection ===
+2025-04-21 19:05:43,635 [MainThread  ] [INFO ] add Mappings
+2025-04-21 19:05:43,635 [MainThread  ] [DEBUG] Starting new HTTPS connection (1): emw1.dm-em.informaticacloud.com:443
+2025-04-21 19:05:44,999 [MainThread  ] [DEBUG] https://emw1.dm-em.informaticacloud.com:443 "GET /saas/public/core/v3/objects?q=type=='Mapping' HTTP/1.1" 200 None
+2025-04-21 19:05:45,047 [MainThread  ] [INFO ] add Mapping Tasks
+2025-04-21 19:05:45,047 [MainThread  ] [DEBUG] Starting new HTTPS connection (1): emw1.dm-em.informaticacloud.com:443
+2025-04-21 19:05:46,580 [MainThread  ] [DEBUG] https://emw1.dm-em.informaticacloud.com:443 "GET /saas/public/core/v3/objects?q=type=='MTT' HTTP/1.1" 200 None
+2025-04-21 19:05:46,622 [MainThread  ] [INFO ] add TaskFlows
+2025-04-21 19:05:46,637 [MainThread  ] [DEBUG] Starting new HTTPS connection (1): emw1.dm-em.informaticacloud.com:443
+2025-04-21 19:05:47,286 [MainThread  ] [DEBUG] https://emw1.dm-em.informaticacloud.com:443 "GET /saas/public/core/v3/objects?q=type=='TASKFLOW' HTTP/1.1" 200 None
+2025-04-21 19:05:47,287 [MainThread  ] [INFO ] 
+=== 4. Search id for objects ====
+2025-04-21 19:05:47,287 [MainThread  ] [INFO ] map_object_to_export: 
+{'IDMC_demo/ETL_Pipelines_idmc/m_calc_budget_usage_datamart': ('m_calc_budget_usage_datamart', '8PQLN3bB82EfLMhnVaAoil'), 'IDMC_demo/ETL_Pipelines_idmc/mt_calc_datamart_Budget_usage': ('mt_calc_datamart_Budget_usage', '6tbjQouMPZ9bSMguFJBwky'), 'IDMC_demo/ETL_Pipelines_idmc/tf_run_data_load_to_DWHHH': ('tf_run_data_load_to_DWHHH', 'not found'), 'ETL Framework/SNE_Transfer_To_Datamarts_Layer_1/m_startRUN_insert_new_RUN_ID': ('m_startRUN_insert_new_RUN_ID', '6PVdmuxEuSSfi0FCb1CsS1'), 'ETL Framework/SNE_Transfer_To_Datamarts_Layer_1/mt_startRUN_custom_scen': ('mt_startRUN_custom_scen', '7ytNIqjKXwyj8bk2hGNzYI'), 'ETL Framework/SNE_Transfer_To_Datamarts_Layer_1/tf_Global_LOAD_Datamarts_Layer_1': ('tf_Global_LOAD_Datamarts_Layer_1', 'exEWE5dAvEGiMQGND2DRu3'), 'ETL Framework/SNE_00_GLOBAL_TF_Orchestration/tf_GLOBAL_Load_Datamats_Layers_from_1_to_4': ('tf_GLOBAL_Load_Datamats_Layers_from_1_to_4', '0wIuCc3kU2pba68J5W6xcl')}
+2025-04-21 19:05:47,287 [MainThread  ] [ERROR] For some objects the ID was not found, check the logs for the full list

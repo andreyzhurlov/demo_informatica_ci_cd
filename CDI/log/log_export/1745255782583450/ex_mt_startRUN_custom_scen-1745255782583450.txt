@@ -1,0 +1,17 @@
+> OIE_002 INFO 2025-04-21T17:16:44.400Z Starting export operation.
+Execution Client: API
+Job Name: mt_startRUN_custom_scen-1745255782583450
+Organization: Enfint GmbH
+Job Id: jpLlCD2VHcBcvGsICv8W07
+User: ajurlov
+> OIE_004 INFO 2025-04-21T17:16:44.455Z Successfully exported object [/Explore/ETL Framework] of type [Project] id [0vGWEDUKC99fsgVdjwdiQr]
+> OIE_004 INFO 2025-04-21T17:16:44.491Z Successfully exported object [/Explore/ETL Framework/SNE_Transfer_To_Datamarts_Layer_1] of type [Folder] id [9dYYdixqvmjfmZe8jD12yh]
+> OIE_004 INFO 2025-04-21T17:16:44.746Z Successfully exported object [/Explore/ETL Framework/SNE_Transfer_To_Datamarts_Layer_1/mt_startRUN_custom_scen] of type [MTT] id [7ytNIqjKXwyj8bk2hGNzYI]
+> OIE_003 INFO 2025-04-21T17:16:44.746Z Finished export operation.
+Job Name: mt_startRUN_custom_scen-1745255782583450
+Start Time: 04/21/25 5:16 PM
+End Time: 04/21/25 5:16 PM
+Started by: ajurlov
+Start Method: API
+Source Organization: Enfint GmbH
+Status: SUCCESSFUL
