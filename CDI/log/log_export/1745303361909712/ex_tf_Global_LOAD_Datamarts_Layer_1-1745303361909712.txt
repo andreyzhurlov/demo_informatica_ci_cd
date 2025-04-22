@@ -1,0 +1,17 @@
+> OIE_002 INFO 2025-04-22T06:30:09.025Z Starting export operation.
+Execution Client: API
+Job Name: tf_Global_LOAD_Datamarts_Layer_1-1745303361909712
+Organization: Enfint GmbH
+Job Id: eoNfOBwvVCNf6j3TyuHGMx
+User: ajurlov
+> OIE_004 INFO 2025-04-22T06:30:09.068Z Successfully exported object [/Explore/ETL Framework] of type [Project] id [0vGWEDUKC99fsgVdjwdiQr]
+> OIE_004 INFO 2025-04-22T06:30:09.104Z Successfully exported object [/Explore/ETL Framework/SNE_Transfer_To_Datamarts_Layer_1] of type [Folder] id [9dYYdixqvmjfmZe8jD12yh]
+> OIE_004 INFO 2025-04-22T06:30:17.160Z Successfully exported object [/Explore/ETL Framework/SNE_Transfer_To_Datamarts_Layer_1/tf_Global_LOAD_Datamarts_Layer_1] of type [TASKFLOW] id [exEWE5dAvEGiMQGND2DRu3]
+> OIE_003 INFO 2025-04-22T06:30:17.160Z Finished export operation.
+Job Name: tf_Global_LOAD_Datamarts_Layer_1-1745303361909712
+Start Time: 04/22/25 6:30 AM
+End Time: 04/22/25 6:30 AM
+Started by: ajurlov
+Start Method: API
+Source Organization: Enfint GmbH
+Status: SUCCESSFUL

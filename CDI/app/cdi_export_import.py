@@ -403,14 +403,13 @@ if __name__ == "__main__":
                 break
             time.sleep(pause_sec)
 
-        export_to_import_path = ""
+        export_file = f"{ic_object_name}-{CI_CD_SESSION_ID}.zip"
+        export_folder = export_session_folder
+        export_to_import_path = export_folder + export_file
         if ic_export_job_status == "SUCCESSFUL":
             # === 7. Load Export Package ===
             rootLogger.info(f"\n===  7.{k} Load Export Package ===")
-            export_file = f"{ic_object_name}-{CI_CD_SESSION_ID}.zip"
-            export_folder = export_session_folder 
             status = load_export_package(ic_server_url, ic_session_id, ic_export_job_id, export_folder, export_file)
-            export_to_import_path = export_folder + export_file
             if status == 1:
                 rootLogger.info(f"(7.{k}) -=[~+~] Package exported successfully [~+~]=-")
             else:

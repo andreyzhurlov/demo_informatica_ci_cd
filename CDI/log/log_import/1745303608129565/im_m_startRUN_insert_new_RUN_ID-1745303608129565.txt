@@ -1,0 +1,15 @@
+> OIE_002 INFO 2025-04-22T06:34:03.232Z Starting import operation.
+Execution Client: API
+Job Name: m_startRUN_insert_new_RUN_ID-1745303608129565
+Organization: Enfint GmbH
+Job Id: 1dnlb6N8npAjUfZNwgKzEz
+User: ajurlov
+> OIE_006 INFO 2025-04-22T06:34:04.517Z Successfully imported object [/Explore/ETL Framework/SNE_Transfer_To_Datamarts_Layer_1/m_startRUN_insert_new_RUN_ID] of type [DTEMPLATE] id [6PVdmuxEuSSfi0FCb1CsS1] to [/Explore/ETL Framework/SNE_Transfer_To_Datamarts_Layer_1/m_startRUN_insert_new_RUN_ID]
+> OIE_003 INFO 2025-04-22T06:34:04.517Z Finished import operation.
+Job Name: m_startRUN_insert_new_RUN_ID-1745303608129565
+Start Time: 04/22/25 6:34 AM
+End Time: 04/22/25 6:34 AM
+Started by: ajurlov
+Start Method: API
+Source Organization: Enfint GmbH
+Status: SUCCESSFUL

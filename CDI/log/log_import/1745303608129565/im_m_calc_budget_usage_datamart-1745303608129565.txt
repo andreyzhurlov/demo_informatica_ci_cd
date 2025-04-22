@@ -1,0 +1,15 @@
+> OIE_002 INFO 2025-04-22T06:33:37.085Z Starting import operation.
+Execution Client: API
+Job Name: m_calc_budget_usage_datamart-1745303608129565
+Organization: Enfint GmbH
+Job Id: 45UAwpjlOsOhCepf0k3wsU
+User: ajurlov
+> OIE_006 INFO 2025-04-22T06:33:38.471Z Successfully imported object [/Explore/IDMC_demo/ETL_Pipelines_idmc/m_calc_budget_usage_datamart] of type [DTEMPLATE] id [8PQLN3bB82EfLMhnVaAoil] to [/Explore/IDMC_demo/ETL_Pipelines_idmc/m_calc_budget_usage_datamart]
+> OIE_003 INFO 2025-04-22T06:33:38.471Z Finished import operation.
+Job Name: m_calc_budget_usage_datamart-1745303608129565
+Start Time: 04/22/25 6:33 AM
+End Time: 04/22/25 6:33 AM
+Started by: ajurlov
+Start Method: API
+Source Organization: Enfint GmbH
+Status: SUCCESSFUL

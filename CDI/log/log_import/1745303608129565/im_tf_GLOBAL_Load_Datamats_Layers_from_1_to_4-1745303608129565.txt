@@ -1,0 +1,15 @@
+> OIE_002 INFO 2025-04-22T06:34:29.066Z Starting import operation.
+Execution Client: API
+Job Name: tf_GLOBAL_Load_Datamats_Layers_from_1_to_4-1745303608129565
+Organization: Enfint GmbH
+Job Id: iioxUJ1B4ISkpNgKWQbJYd
+User: ajurlov
+> OIE_006 INFO 2025-04-22T06:34:29.452Z Successfully imported object [/Explore/ETL Framework/SNE_00_GLOBAL_TF_Orchestration/tf_GLOBAL_Load_Datamats_Layers_from_1_to_4] of type [TASKFLOW] id [0wIuCc3kU2pba68J5W6xcl] to [/Explore/ETL Framework/SNE_00_GLOBAL_TF_Orchestration/tf_GLOBAL_Load_Datamats_Layers_from_1_to_4]
+> OIE_003 INFO 2025-04-22T06:34:29.452Z Finished import operation.
+Job Name: tf_GLOBAL_Load_Datamats_Layers_from_1_to_4-1745303608129565
+Start Time: 04/22/25 6:34 AM
+End Time: 04/22/25 6:34 AM
+Started by: ajurlov
+Start Method: API
+Source Organization: Enfint GmbH
+Status: SUCCESSFUL
