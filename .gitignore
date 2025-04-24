@@ -1,0 +1,4 @@
+**/venv/
+**/env/
+**/log/
+**/export_to_import/

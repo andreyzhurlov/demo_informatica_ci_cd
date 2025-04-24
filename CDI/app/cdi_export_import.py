@@ -20,16 +20,16 @@ print(f"module_path: {module_path}")
 #ENV for Export
 env_path = Path(f'{module_path}/env/.env_dev')
 load_dotenv(dotenv_path=env_path)
-EX_IC_USERNAME = os.getenv("IC_USERNAME")
-EX_IC_PASSWORD = os.getenv("IC_PASSWORD")
-EX_IC_LOGIN_URL = os.getenv("IC_LOGIN_URL")
+EX_IC_USERNAME = os.getenv("DEV_IC_USERNAME")
+EX_IC_PASSWORD = os.getenv("DEV_IC_PASSWORD")
+EX_IC_LOGIN_URL = os.getenv("DEV_IC_LOGIN_URL")
 
 #ENV for Import
 env_path = Path(f'{module_path}/env/.env_qa')
 load_dotenv(dotenv_path=env_path)
-IM_IC_USERNAME = os.getenv("IC_USERNAME")
-IM_IC_PASSWORD = os.getenv("IC_PASSWORD")
-IM_IC_LOGIN_URL = os.getenv("IC_LOGIN_URL")
+IM_IC_USERNAME = os.getenv("QA_IC_USERNAME")
+IM_IC_PASSWORD = os.getenv("QA_IC_PASSWORD")
+IM_IC_LOGIN_URL = os.getenv("QA_IC_LOGIN_URL")
 
 #CI_CD SETTINGS
 CI_CD_SESSION_ID = str(int( time.time_ns() / 1000 ))
