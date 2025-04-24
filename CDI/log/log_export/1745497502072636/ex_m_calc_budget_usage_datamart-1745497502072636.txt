@@ -1,0 +1,17 @@
+> OIE_002 INFO 2025-04-24T12:25:06.644Z Starting export operation.
+Execution Client: API
+Job Name: m_calc_budget_usage_datamart-1745497502072636
+Organization: Enfint GmbH
+Job Id: hGSW0Vam7A2jv0bYfRHVU0
+User: ajurlov
+> OIE_004 INFO 2025-04-24T12:25:06.702Z Successfully exported object [/Explore/IDMC_demo] of type [Project] id [06jKIdsO2GAiMuToalaliG]
+> OIE_004 INFO 2025-04-24T12:25:06.727Z Successfully exported object [/Explore/IDMC_demo/ETL_Pipelines_idmc] of type [Folder] id [8JLQBS9TPIXbuBwUygqQKr]
+> OIE_004 INFO 2025-04-24T12:25:06.994Z Successfully exported object [/Explore/IDMC_demo/ETL_Pipelines_idmc/m_calc_budget_usage_datamart] of type [DTEMPLATE] id [8PQLN3bB82EfLMhnVaAoil]
+> OIE_003 INFO 2025-04-24T12:25:06.994Z Finished export operation.
+Job Name: m_calc_budget_usage_datamart-1745497502072636
+Start Time: 04/24/25 12:25 PM
+End Time: 04/24/25 12:25 PM
+Started by: ajurlov
+Start Method: API
+Source Organization: Enfint GmbH
+Status: SUCCESSFUL

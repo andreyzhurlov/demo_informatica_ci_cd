@@ -1,0 +1,15 @@
+> OIE_002 INFO 2025-04-24T12:25:27.651Z Starting import operation.
+Execution Client: API
+Job Name: tf_run_data_load_to_DWH-1745497502072636
+Organization: Enfint GmbH
+Job Id: 2eAewDzDDWSiLzwGKELweA
+User: ajurlov
+> OIE_006 INFO 2025-04-24T12:25:28.060Z Successfully imported object [/Explore/IDMC_demo/ETL_Pipelines_idmc/tf_run_data_load_to_DWH] of type [TASKFLOW] id [dpF0myoYhsbhdXbeXp004S] to [/Explore/IDMC_demo/ETL_Pipelines_idmc/tf_run_data_load_to_DWH]
+> OIE_003 INFO 2025-04-24T12:25:28.060Z Finished import operation.
+Job Name: tf_run_data_load_to_DWH-1745497502072636
+Start Time: 04/24/25 12:25 PM
+End Time: 04/24/25 12:25 PM
+Started by: ajurlov
+Start Method: API
+Source Organization: Enfint GmbH
+Status: SUCCESSFUL

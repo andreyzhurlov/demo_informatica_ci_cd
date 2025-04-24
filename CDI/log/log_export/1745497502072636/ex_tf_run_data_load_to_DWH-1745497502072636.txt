@@ -1,0 +1,17 @@
+> OIE_002 INFO 2025-04-24T12:25:23.288Z Starting export operation.
+Execution Client: API
+Job Name: tf_run_data_load_to_DWH-1745497502072636
+Organization: Enfint GmbH
+Job Id: 4fNHm9Y3hPkhCY2hHveTaR
+User: ajurlov
+> OIE_004 INFO 2025-04-24T12:25:23.344Z Successfully exported object [/Explore/IDMC_demo] of type [Project] id [06jKIdsO2GAiMuToalaliG]
+> OIE_004 INFO 2025-04-24T12:25:23.369Z Successfully exported object [/Explore/IDMC_demo/ETL_Pipelines_idmc] of type [Folder] id [8JLQBS9TPIXbuBwUygqQKr]
+> OIE_004 INFO 2025-04-24T12:25:23.820Z Successfully exported object [/Explore/IDMC_demo/ETL_Pipelines_idmc/tf_run_data_load_to_DWH] of type [TASKFLOW] id [dpF0myoYhsbhdXbeXp004S]
+> OIE_003 INFO 2025-04-24T12:25:23.820Z Finished export operation.
+Job Name: tf_run_data_load_to_DWH-1745497502072636
+Start Time: 04/24/25 12:25 PM
+End Time: 04/24/25 12:25 PM
+Started by: ajurlov
+Start Method: API
+Source Organization: Enfint GmbH
+Status: SUCCESSFUL

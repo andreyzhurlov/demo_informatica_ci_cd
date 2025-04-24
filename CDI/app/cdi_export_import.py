@@ -74,7 +74,7 @@ rootLogger.info(f">> CI_CD_SESSION_ID: {CI_CD_SESSION_ID}")
 
 # EXPORT UTILS ###########################################################################
 
-def ic_authentication(login: str, password: str):
+def ic_authentication(login_url: str, login: str, password: str):
     auth_payload = {
         "@type": "login",
         "username": login,
@@ -82,7 +82,7 @@ def ic_authentication(login: str, password: str):
     }
     ic_server_url = ""
     ic_session_id = ""
-    auth_response = requests.post(EX_IC_LOGIN_URL, json=auth_payload)
+    auth_response = requests.post(login_url, json=auth_payload)
     if auth_response.status_code == 200:
         response_data = json.loads(auth_response.content)
         ic_server_url = response_data['serverUrl']
@@ -92,7 +92,7 @@ def ic_authentication(login: str, password: str):
         rootLogger.info(f"status_code: {auth_response.status_code}")
         rootLogger.info(auth_response.text)
         raise Exception("Authentication denied!")
-    return (auth_response.status_code,ic_server_url,ic_session_id)
+    return (auth_response.status_code, ic_server_url, ic_session_id)
 
 
 def get_object_list_to_export(ci_cd_task_path: str):
@@ -329,10 +329,15 @@ def load_import_log(server_url: str, session_id: str, export_id: str, log_folder
 if __name__ == "__main__":
 
     # === 1. Authorization ===
-    rootLogger.info("\n=== 1. Authorization ===")
-    auth_response_code, ic_server_url, ic_session_id = ic_authentication(EX_IC_USERNAME, EX_IC_PASSWORD)
-    rootLogger.info(f"ic_server_url: {ic_server_url}")
-    rootLogger.info(f"ic_session_id: {ic_session_id}")
+    rootLogger.info("\n=== 1.1 Authorization in Export env ===")
+    auth_response_code, ex_ic_server_url, ex_ic_session_id = ic_authentication(EX_IC_LOGIN_URL, EX_IC_USERNAME, EX_IC_PASSWORD)
+    rootLogger.info(f"ex_ic_server_url: {ex_ic_server_url}")
+    rootLogger.info(f"ex_ic_session_id: {ex_ic_session_id}")
+
+    rootLogger.info("\n=== 1.2 Authorization in Import env ===")
+    auth_response_code, im_ic_server_url, im_ic_session_id = ic_authentication(IM_IC_LOGIN_URL, IM_IC_USERNAME, IM_IC_PASSWORD)
+    rootLogger.info(f"im_ic_server_url: {im_ic_server_url}")
+    rootLogger.info(f"im_ic_session_id: {im_ic_session_id}")
 
     # === 2. Get list of objects to export ===
     rootLogger.info("\n=== 2. Get list of objects to export ===")
@@ -343,17 +348,17 @@ if __name__ == "__main__":
     cdi_object_collection = dict()
 
     rootLogger.info("(3) add Mappings")
-    mapping_list = get_all_objects_by_type(ic_server_url, ic_session_id, 'Mapping')
+    mapping_list = get_all_objects_by_type(ex_ic_server_url, ex_ic_session_id, 'Mapping')
     mapping_collection = crete_object_collection(mapping_list)
     cdi_object_collection.update(mapping_collection)
 
     rootLogger.info("(3) add Mapping Tasks")
-    mt_list = get_all_objects_by_type(ic_server_url, ic_session_id, 'MTT')
+    mt_list = get_all_objects_by_type(ex_ic_server_url, ex_ic_session_id, 'MTT')
     mt_collection = crete_object_collection(mt_list)
     cdi_object_collection.update(mt_collection)
 
     rootLogger.info("(3) add TaskFlows")
-    tf_list = get_all_objects_by_type(ic_server_url, ic_session_id, 'TASKFLOW')
+    tf_list = get_all_objects_by_type(ex_ic_server_url, ex_ic_session_id, 'TASKFLOW')
     tf_collection = crete_object_collection(tf_list)
     cdi_object_collection.update(tf_collection)
 
@@ -386,7 +391,7 @@ if __name__ == "__main__":
 
         export_job_name = f"{ic_object_name}-{CI_CD_SESSION_ID}"
         rootLogger.info(f"\n(5.{k}) >> export_job_name: {export_job_name}")
-        ic_export_job_id = create_export_job(ic_server_url, ic_session_id, export_job_name, ic_object_id)
+        ic_export_job_id = create_export_job(ex_ic_server_url, ex_ic_session_id, export_job_name, ic_object_id)
         rootLogger.info(f"(5.{k}) >> ic_export_job_id: {ic_export_job_id}")
         time.sleep(3)
 
@@ -397,7 +402,7 @@ if __name__ == "__main__":
         pause_sec = 3
         ic_export_job_status = ""
         for i in range(1, n_attempts):
-            ic_export_job_status = check_export_job_status(ic_server_url, ic_session_id, ic_export_job_id)
+            ic_export_job_status = check_export_job_status(ex_ic_server_url, ex_ic_session_id, ic_export_job_id)
             rootLogger.info(f"(6.{k}) >> [{i}] check ic_export_job_status: {ic_export_job_status}")
             if ic_export_job_status == "SUCCESSFUL":
                 break
@@ -409,7 +414,7 @@ if __name__ == "__main__":
         if ic_export_job_status == "SUCCESSFUL":
             # === 7. Load Export Package ===
             rootLogger.info(f"\n===  7.{k} Load Export Package ===")
-            status = load_export_package(ic_server_url, ic_session_id, ic_export_job_id, export_folder, export_file)
+            status = load_export_package(ex_ic_server_url, ex_ic_session_id, ic_export_job_id, export_folder, export_file)
             if status == 1:
                 rootLogger.info(f"(7.{k}) -=[~+~] Package exported successfully [~+~]=-")
             else:
@@ -420,7 +425,7 @@ if __name__ == "__main__":
         # === 8. Load Export Package ===
         rootLogger.info(f"\n===  8.{k} Load Export Package Log ===")
         log_export_file = f"ex_{ic_object_name}-{CI_CD_SESSION_ID}.txt"
-        status = load_export_log(ic_server_url, ic_session_id, ic_export_job_id, log_export_folder_session, log_export_file)
+        status = load_export_log(ex_ic_server_url, ex_ic_session_id, ic_export_job_id, log_export_folder_session, log_export_file)
         if status == 1:
             rootLogger.info(f"(8.{k}) [+] Export log saved")
         else:
@@ -430,7 +435,7 @@ if __name__ == "__main__":
 
         # === 9. Upload Import Package === 
         rootLogger.info("\n=== 9. Upload Import Package === ")
-        ic_import_job_id = upload_import_package(ic_server_url, ic_session_id, export_to_import_path)
+        ic_import_job_id = upload_import_package(im_ic_server_url, im_ic_session_id, export_to_import_path)
         rootLogger.info(f"(9.{k}) ic_import_job_id: {ic_import_job_id}")
         if ic_import_job_id == 0:
             raise Exception(f"(9.{k}) [Error]: ic_import_job_id is invalid, please check logs")
@@ -439,7 +444,8 @@ if __name__ == "__main__":
         rootLogger.info("\n=== 10. Create Import Job ===")
         import_job_name = export_job_name
         list_object_id = [ic_object_id]
-        ic_import_job_status = create_import_job(ic_server_url, ic_session_id, ic_import_job_id, import_job_name, list_object_id, IMPORT_CONFLICT_RESOLUTION)
+
+        ic_import_job_status = create_import_job(im_ic_server_url, im_ic_session_id, ic_import_job_id, import_job_name, list_object_id, IMPORT_CONFLICT_RESOLUTION)
         rootLogger.info(f"(10) ic_import_job_status: {ic_import_job_status}")
         time.sleep(3)
         
@@ -450,17 +456,17 @@ if __name__ == "__main__":
         pause_sec = 3
         ic_import_job_status = ""
         for i in range(1, n_attempts):
-            ic_import_job_status = check_export_job_status(ic_server_url, ic_session_id, ic_export_job_id)
-            rootLogger.info(f"(11.{k}) >> [{i}] check ic_import_job_status: {ic_export_job_status}")
+            ic_import_job_status = check_export_job_status(im_ic_server_url, im_ic_session_id, ic_export_job_id)
+            rootLogger.info(f"(11.{k}) >> [{i}] check ic_import_job_status: {ic_import_job_status}")
             if ic_import_job_status == "SUCCESSFUL":
                 break
             time.sleep(pause_sec)
         
         if ic_import_job_status == "SUCCESSFUL":
-            # === 12. Load Export Package ===
-            rootLogger.info(f"\n=== 12.{k} Load Export Package Log ===")
+            # === 12. Load Import  Log  ===
+            rootLogger.info(f"\n=== 12.{k} Load Import  Log ===")
             log_import_file = f"im_{ic_object_name}-{CI_CD_SESSION_ID}.txt"
-            status = load_import_log(ic_server_url, ic_session_id, ic_import_job_id, log_import_folder_session, log_import_file)
+            status = load_import_log(im_ic_server_url, im_ic_session_id, ic_import_job_id, log_import_folder_session, log_import_file)
             if status == 1:
                 rootLogger.info(f"(12.{k}) [+] Import log saved")
             else:

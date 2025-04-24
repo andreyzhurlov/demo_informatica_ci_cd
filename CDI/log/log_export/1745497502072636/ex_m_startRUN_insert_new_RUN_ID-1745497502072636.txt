@@ -1,0 +1,17 @@
+> OIE_002 INFO 2025-04-24T12:25:31.532Z Starting export operation.
+Execution Client: API
+Job Name: m_startRUN_insert_new_RUN_ID-1745497502072636
+Organization: Enfint GmbH
+Job Id: 6fz0ZDGCMNplyQrgeExq6p
+User: ajurlov
+> OIE_004 INFO 2025-04-24T12:25:31.582Z Successfully exported object [/Explore/ETL Framework] of type [Project] id [0vGWEDUKC99fsgVdjwdiQr]
+> OIE_004 INFO 2025-04-24T12:25:31.615Z Successfully exported object [/Explore/ETL Framework/SNE_Transfer_To_Datamarts_Layer_1] of type [Folder] id [9dYYdixqvmjfmZe8jD12yh]
+> OIE_004 INFO 2025-04-24T12:25:31.768Z Successfully exported object [/Explore/ETL Framework/SNE_Transfer_To_Datamarts_Layer_1/m_startRUN_insert_new_RUN_ID] of type [DTEMPLATE] id [6PVdmuxEuSSfi0FCb1CsS1]
+> OIE_003 INFO 2025-04-24T12:25:31.768Z Finished export operation.
+Job Name: m_startRUN_insert_new_RUN_ID-1745497502072636
+Start Time: 04/24/25 12:25 PM
+End Time: 04/24/25 12:25 PM
+Started by: ajurlov
+Start Method: API
+Source Organization: Enfint GmbH
+Status: SUCCESSFUL

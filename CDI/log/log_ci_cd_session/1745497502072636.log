@@ -1,0 +1,382 @@
+2025-04-24 14:25:02,073 [MainThread  ] [INFO   ] >> CI_CD_SESSION_ID: 1745497502072636
+2025-04-24 14:25:02,073 [MainThread  ] [INFO   ] 
+=== 1.1 Authorization in Export env ===
+2025-04-24 14:25:02,076 [MainThread  ] [DEBUG  ] Starting new HTTPS connection (1): dm-em.informaticacloud.com:443
+2025-04-24 14:25:02,462 [MainThread  ] [DEBUG  ] https://dm-em.informaticacloud.com:443 "POST /ma/api/v2/user/login HTTP/1.1" 200 None
+2025-04-24 14:25:02,462 [MainThread  ] [INFO   ] Authentication successful
+2025-04-24 14:25:02,462 [MainThread  ] [INFO   ] ex_ic_server_url: https://emw1.dm-em.informaticacloud.com/saas
+2025-04-24 14:25:02,462 [MainThread  ] [INFO   ] ex_ic_session_id: 4NM6bWrSQ6HlSP1EjfhCks
+2025-04-24 14:25:02,462 [MainThread  ] [INFO   ] 
+=== 1.1 Authorization in Import env ===
+2025-04-24 14:25:02,462 [MainThread  ] [DEBUG  ] Starting new HTTPS connection (1): dm-em.informaticacloud.com:443
+2025-04-24 14:25:02,816 [MainThread  ] [DEBUG  ] https://dm-em.informaticacloud.com:443 "POST /ma/api/v2/user/login HTTP/1.1" 200 None
+2025-04-24 14:25:02,817 [MainThread  ] [INFO   ] Authentication successful
+2025-04-24 14:25:02,818 [MainThread  ] [INFO   ] im_ic_server_url: https://emw1.dm-em.informaticacloud.com/saas
+2025-04-24 14:25:02,818 [MainThread  ] [INFO   ] im_ic_session_id: 2Sc4RGc2AqWgP9fUUaIpG7
+2025-04-24 14:25:02,818 [MainThread  ] [INFO   ] 
+=== 2. Get list of objects to export ===
+2025-04-24 14:25:02,820 [MainThread  ] [INFO   ] 
+=== 3. Create cdi_objects collection ===
+2025-04-24 14:25:02,820 [MainThread  ] [INFO   ] (3) add Mappings
+2025-04-24 14:25:02,821 [MainThread  ] [DEBUG  ] Starting new HTTPS connection (1): emw1.dm-em.informaticacloud.com:443
+2025-04-24 14:25:04,509 [MainThread  ] [DEBUG  ] https://emw1.dm-em.informaticacloud.com:443 "GET /saas/public/core/v3/objects?q=type=='Mapping' HTTP/1.1" 200 None
+2025-04-24 14:25:04,559 [MainThread  ] [INFO   ] (3) add Mapping Tasks
+2025-04-24 14:25:04,559 [MainThread  ] [DEBUG  ] Starting new HTTPS connection (1): emw1.dm-em.informaticacloud.com:443
+2025-04-24 14:25:05,538 [MainThread  ] [DEBUG  ] https://emw1.dm-em.informaticacloud.com:443 "GET /saas/public/core/v3/objects?q=type=='MTT' HTTP/1.1" 200 None
+2025-04-24 14:25:05,595 [MainThread  ] [INFO   ] (3) add TaskFlows
+2025-04-24 14:25:05,595 [MainThread  ] [DEBUG  ] Starting new HTTPS connection (1): emw1.dm-em.informaticacloud.com:443
+2025-04-24 14:25:06,234 [MainThread  ] [DEBUG  ] https://emw1.dm-em.informaticacloud.com:443 "GET /saas/public/core/v3/objects?q=type=='TASKFLOW' HTTP/1.1" 200 None
+2025-04-24 14:25:06,234 [MainThread  ] [INFO   ] 
+=== 4. Search id for objects ====
+2025-04-24 14:25:06,234 [MainThread  ] [INFO   ] (4) map_object_to_export: 
+{'IDMC_demo/ETL_Pipelines_idmc/m_calc_budget_usage_datamart': ('m_calc_budget_usage_datamart', '8PQLN3bB82EfLMhnVaAoil'), 'IDMC_demo/ETL_Pipelines_idmc/mt_calc_datamart_Budget_usage': ('mt_calc_datamart_Budget_usage', '6tbjQouMPZ9bSMguFJBwky'), 'IDMC_demo/ETL_Pipelines_idmc/tf_run_data_load_to_DWH': ('tf_run_data_load_to_DWH', 'dpF0myoYhsbhdXbeXp004S'), 'ETL Framework/SNE_Transfer_To_Datamarts_Layer_1/m_startRUN_insert_new_RUN_ID': ('m_startRUN_insert_new_RUN_ID', '6PVdmuxEuSSfi0FCb1CsS1'), 'ETL Framework/SNE_Transfer_To_Datamarts_Layer_1/mt_startRUN_custom_scen': ('mt_startRUN_custom_scen', '7ytNIqjKXwyj8bk2hGNzYI'), 'ETL Framework/SNE_Transfer_To_Datamarts_Layer_1/tf_Global_LOAD_Datamarts_Layer_1': ('tf_Global_LOAD_Datamarts_Layer_1', 'exEWE5dAvEGiMQGND2DRu3'), 'ETL Framework/SNE_00_GLOBAL_TF_Orchestration/tf_GLOBAL_Load_Datamats_Layers_from_1_to_4': ('tf_GLOBAL_Load_Datamats_Layers_from_1_to_4', '0wIuCc3kU2pba68J5W6xcl')}
+2025-04-24 14:25:06,234 [MainThread  ] [INFO   ] 
+=== 5. Run Export - Import Job for each object ===
+2025-04-24 14:25:06,234 [MainThread  ] [INFO   ] 
+(5.1) >> ic_object_path: IDMC_demo/ETL_Pipelines_idmc/m_calc_budget_usage_datamart | ic_object_name: m_calc_budget_usage_datamart | ic_object_id: 8PQLN3bB82EfLMhnVaAoil
+2025-04-24 14:25:06,234 [MainThread  ] [INFO   ] 
+(5.1) >> export_job_name: m_calc_budget_usage_datamart-1745497502072636
+2025-04-24 14:25:06,234 [MainThread  ] [DEBUG  ] Starting new HTTPS connection (1): emw1.dm-em.informaticacloud.com:443
+2025-04-24 14:25:06,676 [MainThread  ] [DEBUG  ] https://emw1.dm-em.informaticacloud.com:443 "POST /saas/public/core/v3/export HTTP/1.1" 200 None
+2025-04-24 14:25:06,697 [MainThread  ] [INFO   ] (5.1) >> ic_export_job_id: hGSW0Vam7A2jv0bYfRHVU0
+2025-04-24 14:25:09,698 [MainThread  ] [INFO   ] 
+===  6.1 Checking Export Job status ===
+2025-04-24 14:25:09,699 [MainThread  ] [DEBUG  ] Starting new HTTPS connection (1): emw1.dm-em.informaticacloud.com:443
+2025-04-24 14:25:09,909 [MainThread  ] [DEBUG  ] https://emw1.dm-em.informaticacloud.com:443 "GET /saas/public/core/v3/export/hGSW0Vam7A2jv0bYfRHVU0 HTTP/1.1" 200 None
+2025-04-24 14:25:09,928 [MainThread  ] [INFO   ] (6.1) >> [1] check ic_export_job_status: SUCCESSFUL
+2025-04-24 14:25:09,928 [MainThread  ] [INFO   ] 
+===  7.1 Load Export Package ===
+2025-04-24 14:25:09,929 [MainThread  ] [INFO   ] >> Export directory created: c:/Users/azhurl01/My_GitHub/demo_informatica_ci_cd/CDI/export_to_import/dev_to_qa/1745497502072636/
+2025-04-24 14:25:09,929 [MainThread  ] [DEBUG  ] Starting new HTTPS connection (1): emw1.dm-em.informaticacloud.com:443
+2025-04-24 14:25:10,182 [MainThread  ] [DEBUG  ] https://emw1.dm-em.informaticacloud.com:443 "GET /saas/public/core/v3/export/hGSW0Vam7A2jv0bYfRHVU0/package HTTP/1.1" 200 None
+2025-04-24 14:25:10,182 [MainThread  ] [INFO   ] [V] Package saved successfully in path 'c:/Users/azhurl01/My_GitHub/demo_informatica_ci_cd/CDI/export_to_import/dev_to_qa/1745497502072636/m_calc_budget_usage_datamart-1745497502072636.zip'
+2025-04-24 14:25:10,182 [MainThread  ] [INFO   ] (7.1) -=[~+~] Package exported successfully [~+~]=-
+2025-04-24 14:25:10,182 [MainThread  ] [INFO   ] 
+===  8.1 Load Export Package Log ===
+2025-04-24 14:25:10,182 [MainThread  ] [INFO   ] >> Export Log directory created: c:/Users/azhurl01/My_GitHub/demo_informatica_ci_cd/CDI/log/log_export/1745497502072636/
+2025-04-24 14:25:10,197 [MainThread  ] [DEBUG  ] Starting new HTTPS connection (1): emw1.dm-em.informaticacloud.com:443
+2025-04-24 14:25:10,435 [MainThread  ] [DEBUG  ] https://emw1.dm-em.informaticacloud.com:443 "GET /saas/public/core/v3/export/hGSW0Vam7A2jv0bYfRHVU0/log HTTP/1.1" 200 None
+2025-04-24 14:25:10,456 [MainThread  ] [INFO   ] [V] Export Log saved successfully in path 'c:/Users/azhurl01/My_GitHub/demo_informatica_ci_cd/CDI/log/log_export/1745497502072636/ex_m_calc_budget_usage_datamart-1745497502072636.txt'
+2025-04-24 14:25:10,456 [MainThread  ] [INFO   ] (8.1) [+] Export log saved
+2025-04-24 14:25:10,457 [MainThread  ] [INFO   ] ==========================================================
+2025-04-24 14:25:10,457 [MainThread  ] [INFO   ] 
+=== 9. Upload Import Package === 
+2025-04-24 14:25:10,457 [MainThread  ] [INFO   ] export_to_import_path: c:/Users/azhurl01/My_GitHub/demo_informatica_ci_cd/CDI/export_to_import/dev_to_qa/1745497502072636/m_calc_budget_usage_datamart-1745497502072636.zip
+2025-04-24 14:25:10,459 [MainThread  ] [DEBUG  ] Starting new HTTPS connection (1): emw1.dm-em.informaticacloud.com:443
+2025-04-24 14:25:10,762 [MainThread  ] [DEBUG  ] https://emw1.dm-em.informaticacloud.com:443 "POST /saas/public/core/v3/import/package HTTP/1.1" 200 None
+2025-04-24 14:25:10,786 [MainThread  ] [INFO   ] [V] Import package uploaded successfully
+2025-04-24 14:25:10,787 [MainThread  ] [INFO   ] (9.1) ic_import_job_id: 6p0LNoUTIVBkLq46LYmBCB
+2025-04-24 14:25:10,787 [MainThread  ] [INFO   ] 
+=== 10. Create Import Job ===
+2025-04-24 14:25:10,788 [MainThread  ] [DEBUG  ] Starting new HTTPS connection (1): emw1.dm-em.informaticacloud.com:443
+2025-04-24 14:25:11,128 [MainThread  ] [DEBUG  ] https://emw1.dm-em.informaticacloud.com:443 "POST /saas/public/core/v3/import/6p0LNoUTIVBkLq46LYmBCB HTTP/1.1" 200 None
+2025-04-24 14:25:11,148 [MainThread  ] [INFO   ] [V] Import Job created successfully
+2025-04-24 14:25:11,149 [MainThread  ] [INFO   ] (10) ic_import_job_status: IN_PROGRESS
+2025-04-24 14:25:14,149 [MainThread  ] [INFO   ] 
+=== 11.1 Checking Import Job status ===
+2025-04-24 14:25:14,149 [MainThread  ] [DEBUG  ] Starting new HTTPS connection (1): emw1.dm-em.informaticacloud.com:443
+2025-04-24 14:25:14,352 [MainThread  ] [DEBUG  ] https://emw1.dm-em.informaticacloud.com:443 "GET /saas/public/core/v3/export/hGSW0Vam7A2jv0bYfRHVU0 HTTP/1.1" 200 None
+2025-04-24 14:25:14,374 [MainThread  ] [INFO   ] (11.1) >> [1] check ic_import_job_status: SUCCESSFUL
+2025-04-24 14:25:14,374 [MainThread  ] [INFO   ] 
+=== 12.1 Load Import  Log ===
+2025-04-24 14:25:14,374 [MainThread  ] [INFO   ] >> Import Log directory created: c:/Users/azhurl01/My_GitHub/demo_informatica_ci_cd/CDI/log/log_import/1745497502072636/
+2025-04-24 14:25:14,379 [MainThread  ] [DEBUG  ] Starting new HTTPS connection (1): emw1.dm-em.informaticacloud.com:443
+2025-04-24 14:25:14,583 [MainThread  ] [DEBUG  ] https://emw1.dm-em.informaticacloud.com:443 "GET /saas/public/core/v3/import/6p0LNoUTIVBkLq46LYmBCB/log HTTP/1.1" 200 None
+2025-04-24 14:25:14,618 [MainThread  ] [INFO   ] [V] Export Log saved successfully in path 'c:/Users/azhurl01/My_GitHub/demo_informatica_ci_cd/CDI/log/log_import/1745497502072636/im_m_calc_budget_usage_datamart-1745497502072636.txt'
+2025-04-24 14:25:14,618 [MainThread  ] [INFO   ] (12.1) [+] Import log saved
+2025-04-24 14:25:14,619 [MainThread  ] [INFO   ] 
+(5.2) >> ic_object_path: IDMC_demo/ETL_Pipelines_idmc/mt_calc_datamart_Budget_usage | ic_object_name: mt_calc_datamart_Budget_usage | ic_object_id: 6tbjQouMPZ9bSMguFJBwky
+2025-04-24 14:25:14,619 [MainThread  ] [INFO   ] 
+(5.2) >> export_job_name: mt_calc_datamart_Budget_usage-1745497502072636
+2025-04-24 14:25:14,621 [MainThread  ] [DEBUG  ] Starting new HTTPS connection (1): emw1.dm-em.informaticacloud.com:443
+2025-04-24 14:25:15,021 [MainThread  ] [DEBUG  ] https://emw1.dm-em.informaticacloud.com:443 "POST /saas/public/core/v3/export HTTP/1.1" 200 None
+2025-04-24 14:25:15,038 [MainThread  ] [INFO   ] (5.2) >> ic_export_job_id: 67PV05eNmd9d2TH0EJnuMb
+2025-04-24 14:25:18,039 [MainThread  ] [INFO   ] 
+===  6.2 Checking Export Job status ===
+2025-04-24 14:25:18,039 [MainThread  ] [DEBUG  ] Starting new HTTPS connection (1): emw1.dm-em.informaticacloud.com:443
+2025-04-24 14:25:18,236 [MainThread  ] [DEBUG  ] https://emw1.dm-em.informaticacloud.com:443 "GET /saas/public/core/v3/export/67PV05eNmd9d2TH0EJnuMb HTTP/1.1" 200 None
+2025-04-24 14:25:18,258 [MainThread  ] [INFO   ] (6.2) >> [1] check ic_export_job_status: SUCCESSFUL
+2025-04-24 14:25:18,258 [MainThread  ] [INFO   ] 
+===  7.2 Load Export Package ===
+2025-04-24 14:25:18,259 [MainThread  ] [DEBUG  ] Starting new HTTPS connection (1): emw1.dm-em.informaticacloud.com:443
+2025-04-24 14:25:18,469 [MainThread  ] [DEBUG  ] https://emw1.dm-em.informaticacloud.com:443 "GET /saas/public/core/v3/export/67PV05eNmd9d2TH0EJnuMb/package HTTP/1.1" 200 None
+2025-04-24 14:25:18,469 [MainThread  ] [INFO   ] [V] Package saved successfully in path 'c:/Users/azhurl01/My_GitHub/demo_informatica_ci_cd/CDI/export_to_import/dev_to_qa/1745497502072636/mt_calc_datamart_Budget_usage-1745497502072636.zip'
+2025-04-24 14:25:18,469 [MainThread  ] [INFO   ] (7.2) -=[~+~] Package exported successfully [~+~]=-
+2025-04-24 14:25:18,469 [MainThread  ] [INFO   ] 
+===  8.2 Load Export Package Log ===
+2025-04-24 14:25:18,469 [MainThread  ] [DEBUG  ] Starting new HTTPS connection (1): emw1.dm-em.informaticacloud.com:443
+2025-04-24 14:25:18,721 [MainThread  ] [DEBUG  ] https://emw1.dm-em.informaticacloud.com:443 "GET /saas/public/core/v3/export/67PV05eNmd9d2TH0EJnuMb/log HTTP/1.1" 200 None
+2025-04-24 14:25:18,740 [MainThread  ] [INFO   ] [V] Export Log saved successfully in path 'c:/Users/azhurl01/My_GitHub/demo_informatica_ci_cd/CDI/log/log_export/1745497502072636/ex_mt_calc_datamart_Budget_usage-1745497502072636.txt'
+2025-04-24 14:25:18,740 [MainThread  ] [INFO   ] (8.2) [+] Export log saved
+2025-04-24 14:25:18,740 [MainThread  ] [INFO   ] ==========================================================
+2025-04-24 14:25:18,740 [MainThread  ] [INFO   ] 
+=== 9. Upload Import Package === 
+2025-04-24 14:25:18,740 [MainThread  ] [INFO   ] export_to_import_path: c:/Users/azhurl01/My_GitHub/demo_informatica_ci_cd/CDI/export_to_import/dev_to_qa/1745497502072636/mt_calc_datamart_Budget_usage-1745497502072636.zip
+2025-04-24 14:25:18,754 [MainThread  ] [DEBUG  ] Starting new HTTPS connection (1): emw1.dm-em.informaticacloud.com:443
+2025-04-24 14:25:19,043 [MainThread  ] [DEBUG  ] https://emw1.dm-em.informaticacloud.com:443 "POST /saas/public/core/v3/import/package HTTP/1.1" 200 None
+2025-04-24 14:25:19,070 [MainThread  ] [INFO   ] [V] Import package uploaded successfully
+2025-04-24 14:25:19,070 [MainThread  ] [INFO   ] (9.2) ic_import_job_id: 2YgEYdqkp5wcGOFXPVKsMG
+2025-04-24 14:25:19,071 [MainThread  ] [INFO   ] 
+=== 10. Create Import Job ===
+2025-04-24 14:25:19,072 [MainThread  ] [DEBUG  ] Starting new HTTPS connection (1): emw1.dm-em.informaticacloud.com:443
+2025-04-24 14:25:19,396 [MainThread  ] [DEBUG  ] https://emw1.dm-em.informaticacloud.com:443 "POST /saas/public/core/v3/import/2YgEYdqkp5wcGOFXPVKsMG HTTP/1.1" 200 None
+2025-04-24 14:25:19,428 [MainThread  ] [INFO   ] [V] Import Job created successfully
+2025-04-24 14:25:19,429 [MainThread  ] [INFO   ] (10) ic_import_job_status: IN_PROGRESS
+2025-04-24 14:25:22,430 [MainThread  ] [INFO   ] 
+=== 11.2 Checking Import Job status ===
+2025-04-24 14:25:22,431 [MainThread  ] [DEBUG  ] Starting new HTTPS connection (1): emw1.dm-em.informaticacloud.com:443
+2025-04-24 14:25:22,627 [MainThread  ] [DEBUG  ] https://emw1.dm-em.informaticacloud.com:443 "GET /saas/public/core/v3/export/67PV05eNmd9d2TH0EJnuMb HTTP/1.1" 200 None
+2025-04-24 14:25:22,643 [MainThread  ] [INFO   ] (11.2) >> [1] check ic_import_job_status: SUCCESSFUL
+2025-04-24 14:25:22,643 [MainThread  ] [INFO   ] 
+=== 12.2 Load Import  Log ===
+2025-04-24 14:25:22,660 [MainThread  ] [DEBUG  ] Starting new HTTPS connection (1): emw1.dm-em.informaticacloud.com:443
+2025-04-24 14:25:22,878 [MainThread  ] [DEBUG  ] https://emw1.dm-em.informaticacloud.com:443 "GET /saas/public/core/v3/import/2YgEYdqkp5wcGOFXPVKsMG/log HTTP/1.1" 200 None
+2025-04-24 14:25:22,878 [MainThread  ] [INFO   ] [V] Export Log saved successfully in path 'c:/Users/azhurl01/My_GitHub/demo_informatica_ci_cd/CDI/log/log_import/1745497502072636/im_mt_calc_datamart_Budget_usage-1745497502072636.txt'
+2025-04-24 14:25:22,878 [MainThread  ] [INFO   ] (12.2) [+] Import log saved
+2025-04-24 14:25:22,890 [MainThread  ] [INFO   ] 
+(5.3) >> ic_object_path: IDMC_demo/ETL_Pipelines_idmc/tf_run_data_load_to_DWH | ic_object_name: tf_run_data_load_to_DWH | ic_object_id: dpF0myoYhsbhdXbeXp004S
+2025-04-24 14:25:22,890 [MainThread  ] [INFO   ] 
+(5.3) >> export_job_name: tf_run_data_load_to_DWH-1745497502072636
+2025-04-24 14:25:22,891 [MainThread  ] [DEBUG  ] Starting new HTTPS connection (1): emw1.dm-em.informaticacloud.com:443
+2025-04-24 14:25:23,321 [MainThread  ] [DEBUG  ] https://emw1.dm-em.informaticacloud.com:443 "POST /saas/public/core/v3/export HTTP/1.1" 200 None
+2025-04-24 14:25:23,345 [MainThread  ] [INFO   ] (5.3) >> ic_export_job_id: 4fNHm9Y3hPkhCY2hHveTaR
+2025-04-24 14:25:26,348 [MainThread  ] [INFO   ] 
+===  6.3 Checking Export Job status ===
+2025-04-24 14:25:26,350 [MainThread  ] [DEBUG  ] Starting new HTTPS connection (1): emw1.dm-em.informaticacloud.com:443
+2025-04-24 14:25:26,544 [MainThread  ] [DEBUG  ] https://emw1.dm-em.informaticacloud.com:443 "GET /saas/public/core/v3/export/4fNHm9Y3hPkhCY2hHveTaR HTTP/1.1" 200 None
+2025-04-24 14:25:26,565 [MainThread  ] [INFO   ] (6.3) >> [1] check ic_export_job_status: SUCCESSFUL
+2025-04-24 14:25:26,565 [MainThread  ] [INFO   ] 
+===  7.3 Load Export Package ===
+2025-04-24 14:25:26,567 [MainThread  ] [DEBUG  ] Starting new HTTPS connection (1): emw1.dm-em.informaticacloud.com:443
+2025-04-24 14:25:26,785 [MainThread  ] [DEBUG  ] https://emw1.dm-em.informaticacloud.com:443 "GET /saas/public/core/v3/export/4fNHm9Y3hPkhCY2hHveTaR/package HTTP/1.1" 200 None
+2025-04-24 14:25:26,787 [MainThread  ] [INFO   ] [V] Package saved successfully in path 'c:/Users/azhurl01/My_GitHub/demo_informatica_ci_cd/CDI/export_to_import/dev_to_qa/1745497502072636/tf_run_data_load_to_DWH-1745497502072636.zip'
+2025-04-24 14:25:26,787 [MainThread  ] [INFO   ] (7.3) -=[~+~] Package exported successfully [~+~]=-
+2025-04-24 14:25:26,788 [MainThread  ] [INFO   ] 
+===  8.3 Load Export Package Log ===
+2025-04-24 14:25:26,788 [MainThread  ] [DEBUG  ] Starting new HTTPS connection (1): emw1.dm-em.informaticacloud.com:443
+2025-04-24 14:25:27,030 [MainThread  ] [DEBUG  ] https://emw1.dm-em.informaticacloud.com:443 "GET /saas/public/core/v3/export/4fNHm9Y3hPkhCY2hHveTaR/log HTTP/1.1" 200 None
+2025-04-24 14:25:27,046 [MainThread  ] [INFO   ] [V] Export Log saved successfully in path 'c:/Users/azhurl01/My_GitHub/demo_informatica_ci_cd/CDI/log/log_export/1745497502072636/ex_tf_run_data_load_to_DWH-1745497502072636.txt'
+2025-04-24 14:25:27,047 [MainThread  ] [INFO   ] (8.3) [+] Export log saved
+2025-04-24 14:25:27,047 [MainThread  ] [INFO   ] ==========================================================
+2025-04-24 14:25:27,047 [MainThread  ] [INFO   ] 
+=== 9. Upload Import Package === 
+2025-04-24 14:25:27,047 [MainThread  ] [INFO   ] export_to_import_path: c:/Users/azhurl01/My_GitHub/demo_informatica_ci_cd/CDI/export_to_import/dev_to_qa/1745497502072636/tf_run_data_load_to_DWH-1745497502072636.zip
+2025-04-24 14:25:27,062 [MainThread  ] [DEBUG  ] Starting new HTTPS connection (1): emw1.dm-em.informaticacloud.com:443
+2025-04-24 14:25:27,326 [MainThread  ] [DEBUG  ] https://emw1.dm-em.informaticacloud.com:443 "POST /saas/public/core/v3/import/package HTTP/1.1" 200 None
+2025-04-24 14:25:27,340 [MainThread  ] [INFO   ] [V] Import package uploaded successfully
+2025-04-24 14:25:27,341 [MainThread  ] [INFO   ] (9.3) ic_import_job_id: 2eAewDzDDWSiLzwGKELweA
+2025-04-24 14:25:27,341 [MainThread  ] [INFO   ] 
+=== 10. Create Import Job ===
+2025-04-24 14:25:27,342 [MainThread  ] [DEBUG  ] Starting new HTTPS connection (1): emw1.dm-em.informaticacloud.com:443
+2025-04-24 14:25:27,690 [MainThread  ] [DEBUG  ] https://emw1.dm-em.informaticacloud.com:443 "POST /saas/public/core/v3/import/2eAewDzDDWSiLzwGKELweA HTTP/1.1" 200 None
+2025-04-24 14:25:27,708 [MainThread  ] [INFO   ] [V] Import Job created successfully
+2025-04-24 14:25:27,708 [MainThread  ] [INFO   ] (10) ic_import_job_status: IN_PROGRESS
+2025-04-24 14:25:30,709 [MainThread  ] [INFO   ] 
+=== 11.3 Checking Import Job status ===
+2025-04-24 14:25:30,710 [MainThread  ] [DEBUG  ] Starting new HTTPS connection (1): emw1.dm-em.informaticacloud.com:443
+2025-04-24 14:25:30,909 [MainThread  ] [DEBUG  ] https://emw1.dm-em.informaticacloud.com:443 "GET /saas/public/core/v3/export/4fNHm9Y3hPkhCY2hHveTaR HTTP/1.1" 200 None
+2025-04-24 14:25:30,925 [MainThread  ] [INFO   ] (11.3) >> [1] check ic_import_job_status: SUCCESSFUL
+2025-04-24 14:25:30,928 [MainThread  ] [INFO   ] 
+=== 12.3 Load Import  Log ===
+2025-04-24 14:25:30,928 [MainThread  ] [DEBUG  ] Starting new HTTPS connection (1): emw1.dm-em.informaticacloud.com:443
+2025-04-24 14:25:31,158 [MainThread  ] [DEBUG  ] https://emw1.dm-em.informaticacloud.com:443 "GET /saas/public/core/v3/import/2eAewDzDDWSiLzwGKELweA/log HTTP/1.1" 200 None
+2025-04-24 14:25:31,168 [MainThread  ] [INFO   ] [V] Export Log saved successfully in path 'c:/Users/azhurl01/My_GitHub/demo_informatica_ci_cd/CDI/log/log_import/1745497502072636/im_tf_run_data_load_to_DWH-1745497502072636.txt'
+2025-04-24 14:25:31,168 [MainThread  ] [INFO   ] (12.3) [+] Import log saved
+2025-04-24 14:25:31,169 [MainThread  ] [INFO   ] 
+(5.4) >> ic_object_path: ETL Framework/SNE_Transfer_To_Datamarts_Layer_1/m_startRUN_insert_new_RUN_ID | ic_object_name: m_startRUN_insert_new_RUN_ID | ic_object_id: 6PVdmuxEuSSfi0FCb1CsS1
+2025-04-24 14:25:31,169 [MainThread  ] [INFO   ] 
+(5.4) >> export_job_name: m_startRUN_insert_new_RUN_ID-1745497502072636
+2025-04-24 14:25:31,170 [MainThread  ] [DEBUG  ] Starting new HTTPS connection (1): emw1.dm-em.informaticacloud.com:443
+2025-04-24 14:25:31,573 [MainThread  ] [DEBUG  ] https://emw1.dm-em.informaticacloud.com:443 "POST /saas/public/core/v3/export HTTP/1.1" 200 None
+2025-04-24 14:25:31,587 [MainThread  ] [INFO   ] (5.4) >> ic_export_job_id: 6fz0ZDGCMNplyQrgeExq6p
+2025-04-24 14:25:34,589 [MainThread  ] [INFO   ] 
+===  6.4 Checking Export Job status ===
+2025-04-24 14:25:34,589 [MainThread  ] [DEBUG  ] Starting new HTTPS connection (1): emw1.dm-em.informaticacloud.com:443
+2025-04-24 14:25:34,786 [MainThread  ] [DEBUG  ] https://emw1.dm-em.informaticacloud.com:443 "GET /saas/public/core/v3/export/6fz0ZDGCMNplyQrgeExq6p HTTP/1.1" 200 None
+2025-04-24 14:25:34,805 [MainThread  ] [INFO   ] (6.4) >> [1] check ic_export_job_status: SUCCESSFUL
+2025-04-24 14:25:34,806 [MainThread  ] [INFO   ] 
+===  7.4 Load Export Package ===
+2025-04-24 14:25:34,807 [MainThread  ] [DEBUG  ] Starting new HTTPS connection (1): emw1.dm-em.informaticacloud.com:443
+2025-04-24 14:25:35,049 [MainThread  ] [DEBUG  ] https://emw1.dm-em.informaticacloud.com:443 "GET /saas/public/core/v3/export/6fz0ZDGCMNplyQrgeExq6p/package HTTP/1.1" 200 None
+2025-04-24 14:25:35,049 [MainThread  ] [INFO   ] [V] Package saved successfully in path 'c:/Users/azhurl01/My_GitHub/demo_informatica_ci_cd/CDI/export_to_import/dev_to_qa/1745497502072636/m_startRUN_insert_new_RUN_ID-1745497502072636.zip'
+2025-04-24 14:25:35,049 [MainThread  ] [INFO   ] (7.4) -=[~+~] Package exported successfully [~+~]=-
+2025-04-24 14:25:35,049 [MainThread  ] [INFO   ] 
+===  8.4 Load Export Package Log ===
+2025-04-24 14:25:35,049 [MainThread  ] [DEBUG  ] Starting new HTTPS connection (1): emw1.dm-em.informaticacloud.com:443
+2025-04-24 14:25:35,313 [MainThread  ] [DEBUG  ] https://emw1.dm-em.informaticacloud.com:443 "GET /saas/public/core/v3/export/6fz0ZDGCMNplyQrgeExq6p/log HTTP/1.1" 200 None
+2025-04-24 14:25:35,313 [MainThread  ] [INFO   ] [V] Export Log saved successfully in path 'c:/Users/azhurl01/My_GitHub/demo_informatica_ci_cd/CDI/log/log_export/1745497502072636/ex_m_startRUN_insert_new_RUN_ID-1745497502072636.txt'
+2025-04-24 14:25:35,328 [MainThread  ] [INFO   ] (8.4) [+] Export log saved
+2025-04-24 14:25:35,328 [MainThread  ] [INFO   ] ==========================================================
+2025-04-24 14:25:35,330 [MainThread  ] [INFO   ] 
+=== 9. Upload Import Package === 
+2025-04-24 14:25:35,330 [MainThread  ] [INFO   ] export_to_import_path: c:/Users/azhurl01/My_GitHub/demo_informatica_ci_cd/CDI/export_to_import/dev_to_qa/1745497502072636/m_startRUN_insert_new_RUN_ID-1745497502072636.zip
+2025-04-24 14:25:35,340 [MainThread  ] [DEBUG  ] Starting new HTTPS connection (1): emw1.dm-em.informaticacloud.com:443
+2025-04-24 14:25:35,690 [MainThread  ] [DEBUG  ] https://emw1.dm-em.informaticacloud.com:443 "POST /saas/public/core/v3/import/package HTTP/1.1" 200 None
+2025-04-24 14:25:35,709 [MainThread  ] [INFO   ] [V] Import package uploaded successfully
+2025-04-24 14:25:35,709 [MainThread  ] [INFO   ] (9.4) ic_import_job_id: 4uAlyxRzDGsctb5IvSaKyX
+2025-04-24 14:25:35,710 [MainThread  ] [INFO   ] 
+=== 10. Create Import Job ===
+2025-04-24 14:25:35,711 [MainThread  ] [DEBUG  ] Starting new HTTPS connection (1): emw1.dm-em.informaticacloud.com:443
+2025-04-24 14:25:36,027 [MainThread  ] [DEBUG  ] https://emw1.dm-em.informaticacloud.com:443 "POST /saas/public/core/v3/import/4uAlyxRzDGsctb5IvSaKyX HTTP/1.1" 200 None
+2025-04-24 14:25:36,047 [MainThread  ] [INFO   ] [V] Import Job created successfully
+2025-04-24 14:25:36,048 [MainThread  ] [INFO   ] (10) ic_import_job_status: IN_PROGRESS
+2025-04-24 14:25:39,049 [MainThread  ] [INFO   ] 
+=== 11.4 Checking Import Job status ===
+2025-04-24 14:25:39,049 [MainThread  ] [DEBUG  ] Starting new HTTPS connection (1): emw1.dm-em.informaticacloud.com:443
+2025-04-24 14:25:39,248 [MainThread  ] [DEBUG  ] https://emw1.dm-em.informaticacloud.com:443 "GET /saas/public/core/v3/export/6fz0ZDGCMNplyQrgeExq6p HTTP/1.1" 200 None
+2025-04-24 14:25:39,268 [MainThread  ] [INFO   ] (11.4) >> [1] check ic_import_job_status: SUCCESSFUL
+2025-04-24 14:25:39,268 [MainThread  ] [INFO   ] 
+=== 12.4 Load Import  Log ===
+2025-04-24 14:25:39,269 [MainThread  ] [DEBUG  ] Starting new HTTPS connection (1): emw1.dm-em.informaticacloud.com:443
+2025-04-24 14:25:39,463 [MainThread  ] [DEBUG  ] https://emw1.dm-em.informaticacloud.com:443 "GET /saas/public/core/v3/import/4uAlyxRzDGsctb5IvSaKyX/log HTTP/1.1" 200 None
+2025-04-24 14:25:39,491 [MainThread  ] [INFO   ] [V] Export Log saved successfully in path 'c:/Users/azhurl01/My_GitHub/demo_informatica_ci_cd/CDI/log/log_import/1745497502072636/im_m_startRUN_insert_new_RUN_ID-1745497502072636.txt'
+2025-04-24 14:25:39,491 [MainThread  ] [INFO   ] (12.4) [+] Import log saved
+2025-04-24 14:25:39,491 [MainThread  ] [INFO   ] 
+(5.5) >> ic_object_path: ETL Framework/SNE_Transfer_To_Datamarts_Layer_1/mt_startRUN_custom_scen | ic_object_name: mt_startRUN_custom_scen | ic_object_id: 7ytNIqjKXwyj8bk2hGNzYI
+2025-04-24 14:25:39,491 [MainThread  ] [INFO   ] 
+(5.5) >> export_job_name: mt_startRUN_custom_scen-1745497502072636
+2025-04-24 14:25:39,491 [MainThread  ] [DEBUG  ] Starting new HTTPS connection (1): emw1.dm-em.informaticacloud.com:443
+2025-04-24 14:25:39,917 [MainThread  ] [DEBUG  ] https://emw1.dm-em.informaticacloud.com:443 "POST /saas/public/core/v3/export HTTP/1.1" 200 None
+2025-04-24 14:25:39,937 [MainThread  ] [INFO   ] (5.5) >> ic_export_job_id: 4S2jlrX00Ang1mx0XvFAC9
+2025-04-24 14:25:42,938 [MainThread  ] [INFO   ] 
+===  6.5 Checking Export Job status ===
+2025-04-24 14:25:42,938 [MainThread  ] [DEBUG  ] Starting new HTTPS connection (1): emw1.dm-em.informaticacloud.com:443
+2025-04-24 14:25:43,141 [MainThread  ] [DEBUG  ] https://emw1.dm-em.informaticacloud.com:443 "GET /saas/public/core/v3/export/4S2jlrX00Ang1mx0XvFAC9 HTTP/1.1" 200 None
+2025-04-24 14:25:43,156 [MainThread  ] [INFO   ] (6.5) >> [1] check ic_export_job_status: SUCCESSFUL
+2025-04-24 14:25:43,160 [MainThread  ] [INFO   ] 
+===  7.5 Load Export Package ===
+2025-04-24 14:25:43,160 [MainThread  ] [DEBUG  ] Starting new HTTPS connection (1): emw1.dm-em.informaticacloud.com:443
+2025-04-24 14:25:43,360 [MainThread  ] [DEBUG  ] https://emw1.dm-em.informaticacloud.com:443 "GET /saas/public/core/v3/export/4S2jlrX00Ang1mx0XvFAC9/package HTTP/1.1" 200 None
+2025-04-24 14:25:43,368 [MainThread  ] [INFO   ] [V] Package saved successfully in path 'c:/Users/azhurl01/My_GitHub/demo_informatica_ci_cd/CDI/export_to_import/dev_to_qa/1745497502072636/mt_startRUN_custom_scen-1745497502072636.zip'
+2025-04-24 14:25:43,368 [MainThread  ] [INFO   ] (7.5) -=[~+~] Package exported successfully [~+~]=-
+2025-04-24 14:25:43,368 [MainThread  ] [INFO   ] 
+===  8.5 Load Export Package Log ===
+2025-04-24 14:25:43,368 [MainThread  ] [DEBUG  ] Starting new HTTPS connection (1): emw1.dm-em.informaticacloud.com:443
+2025-04-24 14:25:43,627 [MainThread  ] [DEBUG  ] https://emw1.dm-em.informaticacloud.com:443 "GET /saas/public/core/v3/export/4S2jlrX00Ang1mx0XvFAC9/log HTTP/1.1" 200 None
+2025-04-24 14:25:43,627 [MainThread  ] [INFO   ] [V] Export Log saved successfully in path 'c:/Users/azhurl01/My_GitHub/demo_informatica_ci_cd/CDI/log/log_export/1745497502072636/ex_mt_startRUN_custom_scen-1745497502072636.txt'
+2025-04-24 14:25:43,643 [MainThread  ] [INFO   ] (8.5) [+] Export log saved
+2025-04-24 14:25:43,643 [MainThread  ] [INFO   ] ==========================================================
+2025-04-24 14:25:43,645 [MainThread  ] [INFO   ] 
+=== 9. Upload Import Package === 
+2025-04-24 14:25:43,646 [MainThread  ] [INFO   ] export_to_import_path: c:/Users/azhurl01/My_GitHub/demo_informatica_ci_cd/CDI/export_to_import/dev_to_qa/1745497502072636/mt_startRUN_custom_scen-1745497502072636.zip
+2025-04-24 14:25:43,664 [MainThread  ] [DEBUG  ] Starting new HTTPS connection (1): emw1.dm-em.informaticacloud.com:443
+2025-04-24 14:25:43,942 [MainThread  ] [DEBUG  ] https://emw1.dm-em.informaticacloud.com:443 "POST /saas/public/core/v3/import/package HTTP/1.1" 200 None
+2025-04-24 14:25:43,968 [MainThread  ] [INFO   ] [V] Import package uploaded successfully
+2025-04-24 14:25:43,968 [MainThread  ] [INFO   ] (9.5) ic_import_job_id: 2x4xxYKUR76iaVd9sl5gGG
+2025-04-24 14:25:43,968 [MainThread  ] [INFO   ] 
+=== 10. Create Import Job ===
+2025-04-24 14:25:43,968 [MainThread  ] [DEBUG  ] Starting new HTTPS connection (1): emw1.dm-em.informaticacloud.com:443
+2025-04-24 14:25:44,314 [MainThread  ] [DEBUG  ] https://emw1.dm-em.informaticacloud.com:443 "POST /saas/public/core/v3/import/2x4xxYKUR76iaVd9sl5gGG HTTP/1.1" 200 None
+2025-04-24 14:25:44,319 [MainThread  ] [INFO   ] [V] Import Job created successfully
+2025-04-24 14:25:44,319 [MainThread  ] [INFO   ] (10) ic_import_job_status: IN_PROGRESS
+2025-04-24 14:25:47,320 [MainThread  ] [INFO   ] 
+=== 11.5 Checking Import Job status ===
+2025-04-24 14:25:47,320 [MainThread  ] [DEBUG  ] Starting new HTTPS connection (1): emw1.dm-em.informaticacloud.com:443
+2025-04-24 14:25:47,534 [MainThread  ] [DEBUG  ] https://emw1.dm-em.informaticacloud.com:443 "GET /saas/public/core/v3/export/4S2jlrX00Ang1mx0XvFAC9 HTTP/1.1" 200 None
+2025-04-24 14:25:47,549 [MainThread  ] [INFO   ] (11.5) >> [1] check ic_import_job_status: SUCCESSFUL
+2025-04-24 14:25:47,552 [MainThread  ] [INFO   ] 
+=== 12.5 Load Import  Log ===
+2025-04-24 14:25:47,552 [MainThread  ] [DEBUG  ] Starting new HTTPS connection (1): emw1.dm-em.informaticacloud.com:443
+2025-04-24 14:25:47,757 [MainThread  ] [DEBUG  ] https://emw1.dm-em.informaticacloud.com:443 "GET /saas/public/core/v3/import/2x4xxYKUR76iaVd9sl5gGG/log HTTP/1.1" 200 None
+2025-04-24 14:25:47,772 [MainThread  ] [INFO   ] [V] Export Log saved successfully in path 'c:/Users/azhurl01/My_GitHub/demo_informatica_ci_cd/CDI/log/log_import/1745497502072636/im_mt_startRUN_custom_scen-1745497502072636.txt'
+2025-04-24 14:25:47,772 [MainThread  ] [INFO   ] (12.5) [+] Import log saved
+2025-04-24 14:25:47,772 [MainThread  ] [INFO   ] 
+(5.6) >> ic_object_path: ETL Framework/SNE_Transfer_To_Datamarts_Layer_1/tf_Global_LOAD_Datamarts_Layer_1 | ic_object_name: tf_Global_LOAD_Datamarts_Layer_1 | ic_object_id: exEWE5dAvEGiMQGND2DRu3
+2025-04-24 14:25:47,772 [MainThread  ] [INFO   ] 
+(5.6) >> export_job_name: tf_Global_LOAD_Datamarts_Layer_1-1745497502072636
+2025-04-24 14:25:47,781 [MainThread  ] [DEBUG  ] Starting new HTTPS connection (1): emw1.dm-em.informaticacloud.com:443
+2025-04-24 14:25:48,193 [MainThread  ] [DEBUG  ] https://emw1.dm-em.informaticacloud.com:443 "POST /saas/public/core/v3/export HTTP/1.1" 200 None
+2025-04-24 14:25:48,197 [MainThread  ] [INFO   ] (5.6) >> ic_export_job_id: jukvJw7D2aSi6SdkuEsT8D
+2025-04-24 14:25:51,198 [MainThread  ] [INFO   ] 
+===  6.6 Checking Export Job status ===
+2025-04-24 14:25:51,198 [MainThread  ] [DEBUG  ] Starting new HTTPS connection (1): emw1.dm-em.informaticacloud.com:443
+2025-04-24 14:25:51,423 [MainThread  ] [DEBUG  ] https://emw1.dm-em.informaticacloud.com:443 "GET /saas/public/core/v3/export/jukvJw7D2aSi6SdkuEsT8D HTTP/1.1" 200 None
+2025-04-24 14:25:51,434 [MainThread  ] [INFO   ] (6.6) >> [1] check ic_export_job_status: SUCCESSFUL
+2025-04-24 14:25:51,434 [MainThread  ] [INFO   ] 
+===  7.6 Load Export Package ===
+2025-04-24 14:25:51,434 [MainThread  ] [DEBUG  ] Starting new HTTPS connection (1): emw1.dm-em.informaticacloud.com:443
+2025-04-24 14:25:51,638 [MainThread  ] [DEBUG  ] https://emw1.dm-em.informaticacloud.com:443 "GET /saas/public/core/v3/export/jukvJw7D2aSi6SdkuEsT8D/package HTTP/1.1" 200 None
+2025-04-24 14:25:51,650 [MainThread  ] [INFO   ] [V] Package saved successfully in path 'c:/Users/azhurl01/My_GitHub/demo_informatica_ci_cd/CDI/export_to_import/dev_to_qa/1745497502072636/tf_Global_LOAD_Datamarts_Layer_1-1745497502072636.zip'
+2025-04-24 14:25:51,650 [MainThread  ] [INFO   ] (7.6) -=[~+~] Package exported successfully [~+~]=-
+2025-04-24 14:25:51,650 [MainThread  ] [INFO   ] 
+===  8.6 Load Export Package Log ===
+2025-04-24 14:25:51,650 [MainThread  ] [DEBUG  ] Starting new HTTPS connection (1): emw1.dm-em.informaticacloud.com:443
+2025-04-24 14:25:51,890 [MainThread  ] [DEBUG  ] https://emw1.dm-em.informaticacloud.com:443 "GET /saas/public/core/v3/export/jukvJw7D2aSi6SdkuEsT8D/log HTTP/1.1" 200 None
+2025-04-24 14:25:51,908 [MainThread  ] [INFO   ] [V] Export Log saved successfully in path 'c:/Users/azhurl01/My_GitHub/demo_informatica_ci_cd/CDI/log/log_export/1745497502072636/ex_tf_Global_LOAD_Datamarts_Layer_1-1745497502072636.txt'
+2025-04-24 14:25:51,909 [MainThread  ] [INFO   ] (8.6) [+] Export log saved
+2025-04-24 14:25:51,909 [MainThread  ] [INFO   ] ==========================================================
+2025-04-24 14:25:51,909 [MainThread  ] [INFO   ] 
+=== 9. Upload Import Package === 
+2025-04-24 14:25:51,909 [MainThread  ] [INFO   ] export_to_import_path: c:/Users/azhurl01/My_GitHub/demo_informatica_ci_cd/CDI/export_to_import/dev_to_qa/1745497502072636/tf_Global_LOAD_Datamarts_Layer_1-1745497502072636.zip
+2025-04-24 14:25:51,925 [MainThread  ] [DEBUG  ] Starting new HTTPS connection (1): emw1.dm-em.informaticacloud.com:443
+2025-04-24 14:25:52,168 [MainThread  ] [DEBUG  ] https://emw1.dm-em.informaticacloud.com:443 "POST /saas/public/core/v3/import/package HTTP/1.1" 200 None
+2025-04-24 14:25:52,184 [MainThread  ] [INFO   ] [V] Import package uploaded successfully
+2025-04-24 14:25:52,184 [MainThread  ] [INFO   ] (9.6) ic_import_job_id: 8Ti0LCn5ZVtkbNolAjaqgj
+2025-04-24 14:25:52,184 [MainThread  ] [INFO   ] 
+=== 10. Create Import Job ===
+2025-04-24 14:25:52,184 [MainThread  ] [DEBUG  ] Starting new HTTPS connection (1): emw1.dm-em.informaticacloud.com:443
+2025-04-24 14:25:52,526 [MainThread  ] [DEBUG  ] https://emw1.dm-em.informaticacloud.com:443 "POST /saas/public/core/v3/import/8Ti0LCn5ZVtkbNolAjaqgj HTTP/1.1" 200 None
+2025-04-24 14:25:52,526 [MainThread  ] [INFO   ] [V] Import Job created successfully
+2025-04-24 14:25:52,526 [MainThread  ] [INFO   ] (10) ic_import_job_status: IN_PROGRESS
+2025-04-24 14:25:55,540 [MainThread  ] [INFO   ] 
+=== 11.6 Checking Import Job status ===
+2025-04-24 14:25:55,542 [MainThread  ] [DEBUG  ] Starting new HTTPS connection (1): emw1.dm-em.informaticacloud.com:443
+2025-04-24 14:25:55,779 [MainThread  ] [DEBUG  ] https://emw1.dm-em.informaticacloud.com:443 "GET /saas/public/core/v3/export/jukvJw7D2aSi6SdkuEsT8D HTTP/1.1" 200 None
+2025-04-24 14:25:55,799 [MainThread  ] [INFO   ] (11.6) >> [1] check ic_import_job_status: SUCCESSFUL
+2025-04-24 14:25:55,800 [MainThread  ] [INFO   ] 
+=== 12.6 Load Import  Log ===
+2025-04-24 14:25:55,800 [MainThread  ] [DEBUG  ] Starting new HTTPS connection (1): emw1.dm-em.informaticacloud.com:443
+2025-04-24 14:25:56,025 [MainThread  ] [DEBUG  ] https://emw1.dm-em.informaticacloud.com:443 "GET /saas/public/core/v3/import/8Ti0LCn5ZVtkbNolAjaqgj/log HTTP/1.1" 200 None
+2025-04-24 14:25:56,034 [MainThread  ] [INFO   ] [V] Export Log saved successfully in path 'c:/Users/azhurl01/My_GitHub/demo_informatica_ci_cd/CDI/log/log_import/1745497502072636/im_tf_Global_LOAD_Datamarts_Layer_1-1745497502072636.txt'
+2025-04-24 14:25:56,034 [MainThread  ] [INFO   ] (12.6) [+] Import log saved
+2025-04-24 14:25:56,034 [MainThread  ] [INFO   ] 
+(5.7) >> ic_object_path: ETL Framework/SNE_00_GLOBAL_TF_Orchestration/tf_GLOBAL_Load_Datamats_Layers_from_1_to_4 | ic_object_name: tf_GLOBAL_Load_Datamats_Layers_from_1_to_4 | ic_object_id: 0wIuCc3kU2pba68J5W6xcl
+2025-04-24 14:25:56,034 [MainThread  ] [INFO   ] 
+(5.7) >> export_job_name: tf_GLOBAL_Load_Datamats_Layers_from_1_to_4-1745497502072636
+2025-04-24 14:25:56,040 [MainThread  ] [DEBUG  ] Starting new HTTPS connection (1): emw1.dm-em.informaticacloud.com:443
+2025-04-24 14:25:56,457 [MainThread  ] [DEBUG  ] https://emw1.dm-em.informaticacloud.com:443 "POST /saas/public/core/v3/export HTTP/1.1" 200 None
+2025-04-24 14:25:56,476 [MainThread  ] [INFO   ] (5.7) >> ic_export_job_id: 3IuYQPcDZ5AdNUUqRjTGmL
+2025-04-24 14:25:59,479 [MainThread  ] [INFO   ] 
+===  6.7 Checking Export Job status ===
+2025-04-24 14:25:59,481 [MainThread  ] [DEBUG  ] Starting new HTTPS connection (1): emw1.dm-em.informaticacloud.com:443
+2025-04-24 14:25:59,674 [MainThread  ] [DEBUG  ] https://emw1.dm-em.informaticacloud.com:443 "GET /saas/public/core/v3/export/3IuYQPcDZ5AdNUUqRjTGmL HTTP/1.1" 200 None
+2025-04-24 14:25:59,689 [MainThread  ] [INFO   ] (6.7) >> [1] check ic_export_job_status: SUCCESSFUL
+2025-04-24 14:25:59,689 [MainThread  ] [INFO   ] 
+===  7.7 Load Export Package ===
+2025-04-24 14:25:59,701 [MainThread  ] [DEBUG  ] Starting new HTTPS connection (1): emw1.dm-em.informaticacloud.com:443
+2025-04-24 14:25:59,913 [MainThread  ] [DEBUG  ] https://emw1.dm-em.informaticacloud.com:443 "GET /saas/public/core/v3/export/3IuYQPcDZ5AdNUUqRjTGmL/package HTTP/1.1" 200 None
+2025-04-24 14:25:59,913 [MainThread  ] [INFO   ] [V] Package saved successfully in path 'c:/Users/azhurl01/My_GitHub/demo_informatica_ci_cd/CDI/export_to_import/dev_to_qa/1745497502072636/tf_GLOBAL_Load_Datamats_Layers_from_1_to_4-1745497502072636.zip'
+2025-04-24 14:25:59,913 [MainThread  ] [INFO   ] (7.7) -=[~+~] Package exported successfully [~+~]=-
+2025-04-24 14:25:59,913 [MainThread  ] [INFO   ] 
+===  8.7 Load Export Package Log ===
+2025-04-24 14:25:59,913 [MainThread  ] [DEBUG  ] Starting new HTTPS connection (1): emw1.dm-em.informaticacloud.com:443
+2025-04-24 14:26:00,172 [MainThread  ] [DEBUG  ] https://emw1.dm-em.informaticacloud.com:443 "GET /saas/public/core/v3/export/3IuYQPcDZ5AdNUUqRjTGmL/log HTTP/1.1" 200 None
+2025-04-24 14:26:00,190 [MainThread  ] [INFO   ] [V] Export Log saved successfully in path 'c:/Users/azhurl01/My_GitHub/demo_informatica_ci_cd/CDI/log/log_export/1745497502072636/ex_tf_GLOBAL_Load_Datamats_Layers_from_1_to_4-1745497502072636.txt'
+2025-04-24 14:26:00,191 [MainThread  ] [INFO   ] (8.7) [+] Export log saved
+2025-04-24 14:26:00,192 [MainThread  ] [INFO   ] ==========================================================
+2025-04-24 14:26:00,192 [MainThread  ] [INFO   ] 
+=== 9. Upload Import Package === 
+2025-04-24 14:26:00,192 [MainThread  ] [INFO   ] export_to_import_path: c:/Users/azhurl01/My_GitHub/demo_informatica_ci_cd/CDI/export_to_import/dev_to_qa/1745497502072636/tf_GLOBAL_Load_Datamats_Layers_from_1_to_4-1745497502072636.zip
+2025-04-24 14:26:00,217 [MainThread  ] [DEBUG  ] Starting new HTTPS connection (1): emw1.dm-em.informaticacloud.com:443
+2025-04-24 14:26:00,496 [MainThread  ] [DEBUG  ] https://emw1.dm-em.informaticacloud.com:443 "POST /saas/public/core/v3/import/package HTTP/1.1" 200 None
+2025-04-24 14:26:00,517 [MainThread  ] [INFO   ] [V] Import package uploaded successfully
+2025-04-24 14:26:00,518 [MainThread  ] [INFO   ] (9.7) ic_import_job_id: 57XLFTMWfWdk5rkV9nWGum
+2025-04-24 14:26:00,521 [MainThread  ] [INFO   ] 
+=== 10. Create Import Job ===
+2025-04-24 14:26:00,523 [MainThread  ] [DEBUG  ] Starting new HTTPS connection (1): emw1.dm-em.informaticacloud.com:443
+2025-04-24 14:26:00,958 [MainThread  ] [DEBUG  ] https://emw1.dm-em.informaticacloud.com:443 "POST /saas/public/core/v3/import/57XLFTMWfWdk5rkV9nWGum HTTP/1.1" 200 None
+2025-04-24 14:26:00,973 [MainThread  ] [INFO   ] [V] Import Job created successfully
+2025-04-24 14:26:00,973 [MainThread  ] [INFO   ] (10) ic_import_job_status: IN_PROGRESS
+2025-04-24 14:26:03,975 [MainThread  ] [INFO   ] 
+=== 11.7 Checking Import Job status ===
+2025-04-24 14:26:03,975 [MainThread  ] [DEBUG  ] Starting new HTTPS connection (1): emw1.dm-em.informaticacloud.com:443
+2025-04-24 14:26:04,175 [MainThread  ] [DEBUG  ] https://emw1.dm-em.informaticacloud.com:443 "GET /saas/public/core/v3/export/3IuYQPcDZ5AdNUUqRjTGmL HTTP/1.1" 200 None
+2025-04-24 14:26:04,191 [MainThread  ] [INFO   ] (11.7) >> [1] check ic_import_job_status: SUCCESSFUL
+2025-04-24 14:26:04,196 [MainThread  ] [INFO   ] 
+=== 12.7 Load Import  Log ===
+2025-04-24 14:26:04,199 [MainThread  ] [DEBUG  ] Starting new HTTPS connection (1): emw1.dm-em.informaticacloud.com:443
+2025-04-24 14:26:04,426 [MainThread  ] [DEBUG  ] https://emw1.dm-em.informaticacloud.com:443 "GET /saas/public/core/v3/import/57XLFTMWfWdk5rkV9nWGum/log HTTP/1.1" 200 None
+2025-04-24 14:26:04,431 [MainThread  ] [INFO   ] [V] Export Log saved successfully in path 'c:/Users/azhurl01/My_GitHub/demo_informatica_ci_cd/CDI/log/log_import/1745497502072636/im_tf_GLOBAL_Load_Datamats_Layers_from_1_to_4-1745497502072636.txt'
+2025-04-24 14:26:04,431 [MainThread  ] [INFO   ] (12.7) [+] Import log saved
+2025-04-24 14:26:04,431 [MainThread  ] [INFO   ] 
+=== Export and Import is finished | CI_CD_SESSION_ID: 1745497502072636 ===
