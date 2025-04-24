@@ -1,2 +1,8 @@
 Sr. No,Type,Folder,Asset Name
 1,Mapping,IDMC_demo/ETL_Pipelines_idmc,m_calc_budget_usage_datamart
+2,Mapping Task,IDMC_demo/ETL_Pipelines_idmc,mt_calc_datamart_Budget_usage
+3,TaskFlow,IDMC_demo/ETL_Pipelines_idmc,tf_run_data_load_to_DWH
+1,Mapping,ETL Framework/SNE_Transfer_To_Datamarts_Layer_1,m_startRUN_insert_new_RUN_ID
+2,Mapping Task,ETL Framework/SNE_Transfer_To_Datamarts_Layer_1,mt_startRUN_custom_scen
+3,TaskFlow,ETL Framework/SNE_Transfer_To_Datamarts_Layer_1,tf_Global_LOAD_Datamarts_Layer_1
+4,TaskFlow,ETL Framework/SNE_00_GLOBAL_TF_Orchestration,tf_GLOBAL_Load_Datamats_Layers_from_1_to_4
