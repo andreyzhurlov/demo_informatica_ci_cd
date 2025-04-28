@@ -10,6 +10,7 @@ from pathlib import Path
 
 ##########################################################################################
 # === 0. set up global variables and logging settings ===
+
 print("\n=== 0. set up global variables and logging settings  ===")
 # path to current file
 current_path = Path(__file__)
@@ -32,6 +33,8 @@ IM_IC_PASSWORD = os.getenv("QA_IC_PASSWORD")
 IM_IC_LOGIN_URL = os.getenv("QA_IC_LOGIN_URL")
 
 #CI_CD SETTINGS
+MODULE_NAME = "CDI"
+print(f"MODULE_NAME: {MODULE_NAME}")
 CI_CD_SESSION_ID = str(int( time.time_ns() / 1000 ))
 CI_CD_DIRECTION = "dev_to_qa"
 CI_CD_TASK_PATH = f"{module_path}/ci_cd_task/{CI_CD_DIRECTION}/" 
@@ -130,7 +133,7 @@ def get_all_objects_by_type(server_url: str, session_id: str, type: str):
         return list_of_objects
 
 
-def crete_object_collection(source_object_list: str):
+def create_object_collection(source_object_list: str):
     object_collection = {obj["path"]: obj["id"] for obj in source_object_list["objects"]}
     return object_collection
 
@@ -327,7 +330,6 @@ def load_import_log(server_url: str, session_id: str, export_id: str, log_folder
 ########################################################################################
 # --- Entry point ---
 if __name__ == "__main__":
-
     # === 1. Authorization ===
     rootLogger.info("\n=== 1.1 Authorization in Export env ===")
     auth_response_code, ex_ic_server_url, ex_ic_session_id = ic_authentication(EX_IC_LOGIN_URL, EX_IC_USERNAME, EX_IC_PASSWORD)
@@ -345,28 +347,44 @@ if __name__ == "__main__":
 
     # === 7. Create cdi_objects collection ===
     rootLogger.info("\n=== 3. Create cdi_objects collection ===")
-    cdi_object_collection = dict()
+    cdi_cai_object_collection = dict()
 
     rootLogger.info("(3) add Mappings")
     mapping_list = get_all_objects_by_type(ex_ic_server_url, ex_ic_session_id, 'Mapping')
-    mapping_collection = crete_object_collection(mapping_list)
-    cdi_object_collection.update(mapping_collection)
+    mapping_collection = create_object_collection(mapping_list)
+    cdi_cai_object_collection.update(mapping_collection)
 
     rootLogger.info("(3) add Mapping Tasks")
     mt_list = get_all_objects_by_type(ex_ic_server_url, ex_ic_session_id, 'MTT')
-    mt_collection = crete_object_collection(mt_list)
-    cdi_object_collection.update(mt_collection)
+    mt_collection = create_object_collection(mt_list)
+    cdi_cai_object_collection.update(mt_collection)
 
     rootLogger.info("(3) add TaskFlows")
     tf_list = get_all_objects_by_type(ex_ic_server_url, ex_ic_session_id, 'TASKFLOW')
-    tf_collection = crete_object_collection(tf_list)
-    cdi_object_collection.update(tf_collection)
+    tf_collection = create_object_collection(tf_list)
+    cdi_cai_object_collection.update(tf_collection)
+
+    rootLogger.info("(3) add ServiceConnectors")
+    sc_list = get_all_objects_by_type(ex_ic_server_url, ex_ic_session_id, 'AI_SERVICE_CONNECTOR')
+    sc_collection = create_object_collection(sc_list)
+    cdi_cai_object_collection.update(sc_collection)
+
+    rootLogger.info("(3) add Processes")
+    pr_list = get_all_objects_by_type(ex_ic_server_url, ex_ic_session_id, 'PROCESS')
+    pr_collection = create_object_collection(pr_list)
+    cdi_cai_object_collection.update(pr_collection)
+
+    rootLogger.info("(3) add AppConnectors")
+    ac_list = get_all_objects_by_type(ex_ic_server_url, ex_ic_session_id, 'AI_CONNECTION')
+    ac_collection = create_object_collection(ac_list)
+    cdi_cai_object_collection.update(ac_collection)
+
 
     rootLogger.info("\n=== 4. Search id for objects ====")
     map_object_to_export = dict()
     for row in list_object_to_export:
         obj_path = f"{row[2]}/{row[3]}"
-        obj_id = cdi_object_collection.get(obj_path, 'not found')
+        obj_id = cdi_cai_object_collection.get(obj_path, 'not found')
         map_object_to_export[obj_path] = (row[3], obj_id)
     rootLogger.info(f"(4) map_object_to_export: \n{map_object_to_export}")
 
@@ -475,6 +493,7 @@ if __name__ == "__main__":
             rootLogger.warning(" (12.{k}) >> Please check Import Job status later or repeat it...")
 
     rootLogger.info(f"\n=== Export and Import is finished | CI_CD_SESSION_ID: {CI_CD_SESSION_ID} ===")
+
 
 
 

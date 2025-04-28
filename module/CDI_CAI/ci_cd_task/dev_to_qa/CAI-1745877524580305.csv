@@ -1,0 +1,11 @@
+﻿Sr. No,Type,Folder,Asset Name,Remarks,Unnamed: 5,Unnamed: 6
+1,Service Connector,SimpliFi_RDM_CAI\CoA,SC-SAP-COA-IDMC,Updated Existing,Harsh,48640
+2,Service Connector,SimpliFi_RDM_CAI\SAP_To_IDMC,SC-SAP-RDM,Updated Existing,Harsh,48640
+3,Service Connector,SimpliFi_RDM_CAI\FPG_to_IDMC,SC-FPG-RDM,Updated Existing,Harsh,48640
+1,Service connector,SimpliFi_RDM_CAI\SAP_To_IDMC,SC-SAP-RDM,Updated,Vivek,50797
+2,Process,SimpliFi_RDM_CAI\SAP_To_IDMC,SP-GetSAPRDData,Updated,Vivek,50797
+1,Service Connector,SimpliFi_RDM_CAI/Delete Inactive codes,SC-RDM-DeleteInactiveCodes-Object,New,Amit,50806
+2,App Connector,SimpliFi_RDM_CAI/Delete Inactive codes,AC-RDM-DeleteInactiveCodes-Object,New,Amit,50806
+3,App Connector,SimpliFi_RDM_CAI/Delete Inactive codes,AC-SAP-RDM-DeleteInactiveRecords-File,New,Amit,50806
+4,Process,SimpliFi_RDM_CAI/Delete Inactive codes,SP-Delete_Inactive_Codes,New,Amit,50806
+5,Process,SimpliFi_RDM_CAI/Delete Inactive codes,MP-DeleteInactiveRecords,New,Amit,50806

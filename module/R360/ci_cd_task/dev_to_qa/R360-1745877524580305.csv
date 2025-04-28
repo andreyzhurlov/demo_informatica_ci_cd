@@ -1,0 +1,344 @@
+﻿Sr. No,Type,RD Set Name,Name,Remarks,Unnamed: 5,Unnamed: 6
+1,Codelist,Local_Core_IT_RD,Data_Points_Cen_L_IT_Object_CL,Updated Existing,Harsh,48640
+2,Codelist,Local_Core_CH_RD,Data_Points_Cen_L_CH_Object_CL,Updated Existing,Harsh,48640
+3,Codelist,Local_Core_FR_RD,Data_Points_Cen_L_FR_Object_CL,Updated Existing,Harsh,48640
+1,Codelist,Global_Core_RD,10_Digit_Account_Low_Cen_G_CL,Update Existing. Basic Validation Rule added.,Harsh,48640
+2,Codelist,Global_Core_RD,10_Digit_Account_Range_Cen_G_CL,Update Existing. Basic Validation Rule added.,Harsh,48640
+3,Codelist,Global_Core_RD,10_Digit Account High_Cen_G_CL,Update Existing. Basic Validation Rule added.,Harsh,48640
+4,Codelist,Global_Core_RD,7_Digit_Account Low_Cen_G_CL,Update Existing. Basic Validation Rule added.,Harsh,48640
+5,Codelist,Global_Core_RD,ACCDET_BEC_and_Output_Information_Cen_G_Object_CL,Update Existing. Basic Validation Rule added.,Harsh,48640
+6,Codelist,Global_Core_RD,ACCDET_Business_Transaction_Type_Cen_G_Object_CL,Update Existing. Basic Validation Rule added.,Harsh,48640
+7,Codelist,Global_Core_RD,ACCDET_Company_Code_Cluster_Cen_G_CL,Update Existing. Basic Validation Rule added.,Harsh,48640
+8,Codelist,Global_Core_RD,ACCDET_Feeder_System_Cluster_Cen_G_CL,Update Existing. Basic Validation Rule added.,Harsh,48640
+9,Codelist,Global_Core_RD,Account_Type_Cen_G_CL,Update Existing. Basic Validation Rule added.,Harsh,48640
+10,Codelist,Global_Core_RD,Accounting_period_in_Cen_G_CL,Update Existing. Basic Validation Rule added.,Harsh,48640
+11,Codelist,Global_Core_RD,Accounting_period_out_Cen_G_CL,Update Existing. Basic Validation Rule added.,Harsh,48640
+12,Codelist,Global_Core_RD,Allianz_LoB_Cen_G_CL,Update Existing. Basic Validation Rule added.,Harsh,48640
+13,Codelist,Global_Core_RD,APAR_FLAG_Cen_G_CL,Update Existing. Basic Validation Rule added.,Harsh,48640
+14,Codelist,Global_Core_RD,Base_Unit_of_Measure_Cen_G_CL,Update Existing. Basic Validation Rule added.,Harsh,48640
+15,Codelist,Global_Core_RD,BEC_Erkennung2_Cen_G_CL,Update Existing. Basic Validation Rule added.,Harsh,48640
+16,Codelist,Global_Core_RD,Branch_Indicator_Cen_G_CL,Update Existing. Basic Validation Rule added.,Harsh,48640
+17,Codelist,Global_Core_RD,Business_Area_Cen_G_CL,Update Existing. Basic Validation Rule added.,Harsh,48640
+18,Codelist,Global_Core_RD,Business_Transaction_Class_Cen_G_CL ,Update Existing. Basic Validation Rule added.,Harsh,48640
+19,Codelist,Global_Core_RD,Business_View_Cen_G_CL,Update Existing. Basic Validation Rule added.,Harsh,48640
+20,Codelist,Global_Core_RD,CBCR_Code_Cen_G_CL,Update Existing. Basic Validation Rule added.,Harsh,48640
+21,Codelist,Global_Core_RD,Change_In_Reserves_Startvalue_Mark_Cen_G_CL,Update Existing. Basic Validation Rule added.,Harsh,48640
+22,Codelist,Global_Core_RD,Closing_System_Cen_G_CL,Update Existing. Basic Validation Rule added.,Harsh,48640
+23,Codelist,Global_Core_RD,Company_Code_Cen_G_CL,Update Existing. Basic Validation Rule added.,Harsh,48640
+24,Codelist,Global_Core_RD,DAC_Granularity_Calculation_Cen_G_CL,Update Existing. Basic Validation Rule added.,Harsh,48640
+25,Codelist,Global_Core_RD,DAC_Granularity_Parameter_Cen_G_CL,Update Existing. Basic Validation Rule added.,Harsh,48640
+26,Codelist,Global_Core_RD,DAC_Pre-coverage_Flag_Cen_G_CL,Update Existing. Basic Validation Rule added.,Harsh,48640
+27,Codelist,Global_Core_RD,DAC_Type_of_Payment_Cen_G_CL,Update Existing. Basic Validation Rule added.,Harsh,48640
+28,Codelist,Global_Core_RD,ECCS_7_digit_account_Cen_G_CL,Update Existing. Basic Validation Rule added.,Harsh,48640
+29,Codelist,Global_Core_RD,ECCS_Breakdown_Category_Mapping_ID_Cen_G_CL,Update Existing. Basic Validation Rule added.,Harsh,48640
+30,Codelist,Global_Core_RD,ECCS_Rounding_Account_Cen_G_CL,Update Existing. Basic Validation Rule added.,Harsh,48640
+31,Codelist,Global_Core_RD,Feeder_Account_Cen_G_CL,Update Existing. Basic Validation Rule added.,Harsh,48640
+32,Codelist,Global_Core_RD,FPSL_Result_Category_Cen_G_CL ,Update Existing. Basic Validation Rule added.,Harsh,48640
+33,Codelist,Global_Core_RD,FX_Conversion_Indicator_Cen_G_CL,Update Existing. Basic Validation Rule added.,Harsh,48640
+34,Codelist,Global_Core_RD,GloBE_Entity_Category_Cen_G_CL,Update Existing. Basic Validation Rule added.,Harsh,48640
+35,Codelist,Global_Core_RD,h,Update Existing. Basic Validation Rule added.,Harsh,48640
+36,Codelist,Global_Core_RD,IFRS_17_Measurement_Model_Cen_G_CL,Update Existing. Basic Validation Rule added.,Harsh,48640
+37,Codelist,Global_Core_RD,Industrial_Sector_ClassificationB_Number_Cen_G_CL,Update Existing. Basic Validation Rule added.,Harsh,48640
+38,Codelist,Global_Core_RD,Industrial_Sector_DetailsB_Number_Cen_G_CL,Update Existing. Basic Validation Rule added.,Harsh,48640
+39,Codelist,Global_Core_RD,Item_Class_of_Business_Trans_Cen_G_CL,Update Existing. Basic Validation Rule added.,Harsh,48640
+40,Codelist,Global_Core_RD,Key_Figure_ID_Cen_G_CL,Update Existing. Basic Validation Rule added.,Harsh,48640
+41,Codelist,Global_Core_RD,Order_Cen_G_CL,Update Existing. Basic Validation Rule added.,Harsh,48640
+42,Codelist,Global_Core_RD,Original_Settlement_Period_Cen_G_CL,Update Existing. Basic Validation Rule added.,Harsh,48640
+43,Codelist,Global_Core_RD,Pfs_Id_Cen_G_CL,Update Existing. Basic Validation Rule added.,Harsh,48640
+44,Codelist,Global_Core_RD,Portfolio_Category_Cen_G_CL,Update Existing. Basic Validation Rule added.,Harsh,48640
+45,Codelist,Global_Core_RD,Portfolio_Status_Cen_G_CL,Update Existing. Basic Validation Rule added.,Harsh,48640
+46,Codelist,Global_Core_RD,Regime_Cen_G_CL,Update Existing. Basic Validation Rule added.,Harsh,48640
+47,Codelist,Global_Core_RD,Reporting_Account_Cen_G_CL,Update Existing. Basic Validation Rule added.,Harsh,48640
+48,Codelist,Global_Core_RD,Result_Data_Area_Cen_G_CL,Update Existing. Basic Validation Rule added.,Harsh,48640
+49,Codelist,Global_Core_RD,Result_Type_Cen_G_CL,Update Existing. Basic Validation Rule added.,Harsh,48640
+50,Codelist,Global_Core_RD,Reversal_of_Actuals_Cen_G_CL,Update Existing. Basic Validation Rule added.,Harsh,48640
+51,Codelist,Global_Core_RD,SOFIA_PITECO_Allocation_Driver_Code_Cen_G_CL,Update Existing. Basic Validation Rule added.,Harsh,48640
+52,Codelist,Global_Core_RD,Solvency_II_LoB_Cen_G_CL,Update Existing. Basic Validation Rule added.,Harsh,48640
+53,Codelist,Global_Core_RD,Statistical_Information_Number_Cen_G_Object_CL,Update Existing. Basic Validation Rule added.,Harsh,48640
+54,Codelist,Global_Core_RD,Status_of_Company_Code_Cen_G_CL,Update Existing. Basic Validation Rule added.,Harsh,48640
+55,Codelist,Global_Core_RD,Subaccount_Category_Cen_G_CL,Update Existing. Basic Validation Rule added.,Harsh,48640
+56,Codelist,Global_Core_RD,Super_LOB_Cen_G_CL,Update Existing. Basic Validation Rule added.,Harsh,48640
+57,Codelist,Global_Core_RD,Swiss_Validation_Rule_Cen_G_CL,Update Existing. Basic Validation Rule added.,Harsh,48640
+58,Codelist,Global_Core_RD,Target_SimpliFi_Module_Cen_G_CL,Update Existing. Basic Validation Rule added.,Harsh,48640
+59,Codelist,Global_Core_RD,Tax_Related_Attributes_Cen_G_CL,Update Existing. Basic Validation Rule added.,Harsh,48640
+60,Codelist,Global_Core_RD,Tax_Reporting_Category_Cen_G_CL,Update Existing. Basic Validation Rule added.,Harsh,48640
+61,Codelist,Global_Core_RD,Tax_Treatment_Investment_Vehicle_Cen_G_CL,Update Existing. Basic Validation Rule added.,Harsh,48640
+62,Codelist,Global_Core_RD,Type_of_Relationship_Cen_G_CL,Update Existing. Basic Validation Rule added.,Harsh,48640
+63,Codelist,Global_Core_RD,Type_of_Tax_Payer_Cen_G_CL,Update Existing. Basic Validation Rule added.,Harsh,48640
+64,Codelist,Global_Core_RD,Unit_Of_Measure_Cen_G_CL,Update Existing. Basic Validation Rule added.,Harsh,48640
+65,Codelist,Global_Core_RD,Universal_Reporting_Company_Code_Cluster_Cen_G_CL,Update Existing. Basic Validation Rule added.,Harsh,48640
+66,Codelist,Global_Core_RD,VAT_Tax_Group_Status_Cen_G_CL,Update Existing. Basic Validation Rule added.,Harsh,48640
+67,Codelist,Global_Core_RD,Year_Cen_G_CL,Update Existing. Basic Validation Rule added.,Harsh,48640
+68,Codelist,Global_Core_RD,7_Digit_Account_Con_G_CL,Update Existing. Basic Validation Rule added.,Harsh,48640
+69,Codelist,Global_Core_RD,Accounting_Event_Category_Con_G_CL,Update Existing. Basic Validation Rule added.,Harsh,48640
+70,Codelist,Global_Core_RD,Accounting_Event_Type_Con_G_CL,Update Existing. Basic Validation Rule added.,Harsh,48640
+71,Codelist,Global_Core_RD,APAR_FLAG_Cen_G_CL,Update Existing. Basic Validation Rule added.,Harsh,48640
+72,Codelist,Global_Core_RD,Applicable_Income_Tax_Treatment_Con_G_CL,Update Existing. Basic Validation Rule added.,Harsh,48640
+73,Codelist,Global_Core_RD,Branch_Code_Con_G_CL,Update Existing. Basic Validation Rule added.,Harsh,48640
+74,Codelist,Global_Core_RD,CARD_NO_CARD_Con_G_CL,Update Existing. Basic Validation Rule added.,Harsh,48640
+75,Codelist,Global_Core_RD,Closing_ID_Con_G_CL,Update Existing. Basic Validation Rule added.,Harsh,48640
+76,Codelist,Global_Core_RD,Co_Insurance_Key_Con_G_CL,Update Existing. Basic Validation Rule added.,Harsh,48640
+77,Codelist,Global_Core_RD,ConsUnit_Prio_Con_G_CL,Update Existing. Basic Validation Rule added.,Harsh,48640
+78,Codelist,Global_Core_RD,Current_or_Previous_Year_Con_G_CL,Update Existing. Basic Validation Rule added.,Harsh,48640
+79,Codelist,Global_Core_RD,Default_Trading_Partner_Required_Flag_Con_G_CL,Update Existing. Basic Validation Rule added.,Harsh,48640
+80,Codelist,Global_Core_RD,Financial_Year_Begin_End_Con_G_CL,Update Existing. Basic Validation Rule added.,Harsh,48640
+81,Codelist,Global_Core_RD,FX_Exchange_Rates_Con_G_CL,Update Existing. Basic Validation Rule added.,Harsh,48640
+82,Codelist,Global_Core_RD,IBAN_Con_G_CL,Update Existing. Basic Validation Rule added.,Harsh,48640
+83,Codelist,Global_Core_RD,IFRS_17_Measurement_Model_Con_G_CL,Update Existing. Basic Validation Rule added.,Harsh,48640
+84,Codelist,Global_Core_RD,Indirect_Impact_Con_G_CL,Update Existing. Basic Validation Rule added.,Harsh,48640
+85,Codelist,Global_Core_RD,Insurance_Product_Key_Con_G_CL,Update Existing. Basic Validation Rule added.,Harsh,48640
+86,Codelist,Global_Core_RD,Object_type_Con_G_CL,Update Existing. Basic Validation Rule added.,Harsh,48640
+87,Codelist,Global_Core_RD,Posting_Fiscal_Period_Con_G_CL,Update Existing. Basic Validation Rule added.,Harsh,48640
+88,Codelist,Global_Core_RD,RI_Contract_Attribute_Con_G_CL,Update Existing. Basic Validation Rule added.,Harsh,48640
+89,Codelist,Global_Core_RD,SCF_Code_Con_G_CL,Update Existing. Basic Validation Rule added.,Harsh,48640
+90,Codelist,Global_Core_RD,Subaccount_Type_Con_G_CL,Update Existing. Basic Validation Rule added.,Harsh,48640
+91,Codelist,Global_Core_RD,Tax_Rate_Con_G_CL,Update Existing. Basic Validation Rule added.,Harsh,48640
+92,Codelist,Global_Core_RD,Transaction_Type_ECCS_Con_G_CL,Update Existing. Basic Validation Rule added.,Harsh,48640
+93,Codelist,Global_Core_RD,Transfer_Country_Con_G_CL,Update Existing. Basic Validation Rule added.,Harsh,48640
+94,Codelist,Global_Core_RD,VAT_Code_Con_G_CL,Update Existing. Basic Validation Rule added.,Harsh,48640
+95,Codelist,Global_Core_CCOA_RD,BDC_Cen_GL_CL,Update Existing. Basic Validation Rule added.,Harsh,48640
+96,Codelist,Global_Core_CCOA_RD,CCCF_Applicable_Income_Tax_Rate_Cen_G_CL,Update Existing. Basic Validation Rule added.,Harsh,48640
+97,Codelist,Global_Core_CCOA_RD,CCCF_Business_Type_Cen_G_CL,Update Existing. Basic Validation Rule added.,Harsh,48640
+98,Codelist,Global_Core_CCOA_RD,CCCF_Customer_Segment_Cen_G_CL,Update Existing. Basic Validation Rule added.,Harsh,48640
+99,Codelist,Global_Core_CCOA_RD,CCCF_Distribution_Channel_Cen_G_CL,Update Existing. Basic Validation Rule added.,Harsh,48640
+100,Codelist,Global_Core_CCOA_RD,CCCF_Product_Line_Cen_G_CL,Update Existing. Basic Validation Rule added.,Harsh,48640
+101,Codelist,Global_Core_CCOA_RD,CCCF_SimpliFi_LoB_Cen_G_CL,Update Existing. Basic Validation Rule added.,Harsh,48640
+102,Codelist,Global_Core_CCOA_RD,CSCF_Local_Customer_Segment_Cen_G_CL,Update Existing. Basic Validation Rule added.,Harsh,48640
+103,Codelist,Global_Core_CCOA_RD,CSCF_Local_Distribution_Channel_Cen_G_CL,Update Existing. Basic Validation Rule added.,Harsh,48640
+104,Codelist,Global_Core_CCOA_RD,CSCF_Local_Jurisdictional_LoB_Cen_G_CL,Update Existing. Basic Validation Rule added.,Harsh,48640
+105,Codelist,Global_Core_CCOA_RD,CSCF_Local_LoB_Cen_G_CL,Update Existing. Basic Validation Rule added.,Harsh,48640
+106,Codelist,Global_Core_CCOA_RD,GL_AZ_Cen_G_CL,Update Existing. Basic Validation Rule added.,Harsh,48640
+107,Codelist,Global_Core_CCOA_RD,GL_CCOA_Cen_G_CL,Update Existing. Basic Validation Rule added.,Harsh,48640
+108,Codelist,Global_Core_CCOA_RD,GL_CH_Alt_CoA_Cen_G_CL,Update Existing. Basic Validation Rule added.,Harsh,48640
+109,Codelist,Global_Core_CCOA_RD,GL_FR_Alt_CoA_Cen_G_CL,Update Existing. Basic Validation Rule added.,Harsh,48640
+110,Codelist,Global_Core_CCOA_RD,GL_IT_Alt_CoA_Cen_G_CL,Update Existing. Basic Validation Rule added.,Harsh,48640
+111,Codelist,Global_Core_CCOA_RD,IFRS_MVBS_Local_Cen_G_CL,Update Existing. Basic Validation Rule added.,Harsh,48640
+112,Codelist,Global_Core_CCOA_RD,Markup_Relevance_Cen_G_CL,Update Existing. Basic Validation Rule added.,Harsh,48640
+113,Codelist,Global_Core_CCOA_RD,MVBS_Closing_Logic_Cen_G_CL,Update Existing. Basic Validation Rule added.,Harsh,48640
+114,Codelist,Global_Core_CCOA_RD,PL_or_BS_Accounts_Cen_G_CL,Update Existing. Basic Validation Rule added.,Harsh,48640
+115,Codelist,Global_Core_CCOA_RD,Relevant_for_Regrouping_Cen_G_CL,Update Existing. Basic Validation Rule added.,Harsh,48640
+116,Codelist,Local_Core_AHDE_RD,Asset_Type_Cen_L_AHDE_CL,Update Existing. Basic Validation Rule added.,Harsh,48640
+117,Codelist,Local_Core_AHDE_RD,Company_Code_Cen_L_AHDE_CL,Update Existing. Basic Validation Rule added.,Harsh,48640
+118,Codelist,Local_Core_AHDE_RD,IFRS_17_Measurement_Model_Cen_L_AHDE_CL,Update Existing. Basic Validation Rule added.,Harsh,48640
+119,Codelist,Local_Core_AHDE_RD,Indirect_Impact_Cen_L_AHDE_CL,Update Existing. Basic Validation Rule added.,Harsh,48640
+120,Codelist,Local_Core_AHDE_RD,Local_LoB_Cen_L_AHDE_CL,Update Existing. Basic Validation Rule added.,Harsh,48640
+121,Codelist,Local_Core_AHDE_RD,Posting_Direction_Cen_L_AHDE_CL,Update Existing. Basic Validation Rule added.,Harsh,48640
+122,Codelist,Local_Core_AHDE_RD,Legal_Entity_Con_L_AHDE_CL,Update Existing. Basic Validation Rule added.,Harsh,48640
+123,Codelist,Local_Core_AHDE_RD,Cost_Center_Con_L_AHDE_CL,Update Existing. Basic Validation Rule added.,Harsh,48640
+124,Codelist,Local_Core_AHDE_RD,Currency_Codes_Con_L_AHDE_CL,Update Existing. Basic Validation Rule added.,Harsh,48640
+125,Codelist,Local_Core_AHDE_RD,Feeder_System_Con_L_AHDE_CL,Update Existing. Basic Validation Rule added.,Harsh,48640
+126,Codelist,Local_Core_AHDE_RD,FX_Exchange_Rates_Con_L_AHDE_CL,Update Existing. Basic Validation Rule added.,Harsh,48640
+127,Codelist,Local_Core_AHDE_RD,Ledger_Group_Con_L_AHDE_CL,Update Existing. Basic Validation Rule added.,Harsh,48640
+128,Codelist,Local_Core_AHDE_RD,Profit_Center_Con_L_AHDE_CL,Update Existing. Basic Validation Rule added.,Harsh,48640
+129,Codelist,Local_Core_AHDE_RD,Transaction_Type_Con_L_AHDE_CL,Update Existing. Basic Validation Rule added.,Harsh,48640
+130,Codelist,Local_Core_AHDE_RD,VAT_Code_Con_L_AHDE_CL,Update Existing. Basic Validation Rule added.,Harsh,48640
+131,Codelist,Local_Core_CH_RD,Agency_Code_Cen_L_CH_CL,Update Existing. Basic Validation Rule added.,Harsh,48640
+132,Codelist,Local_Core_CH_RD,Aggregation_Level_Cen_L_CH_CL,Update Existing. Basic Validation Rule added.,Harsh,48640
+133,Codelist,Local_Core_CH_RD,AOM_KPI_Cen_L_CH_CL,Update Existing. Basic Validation Rule added.,Harsh,48640
+134,Codelist,Local_Core_CH_RD,Asset_Type_Cen_L_CH_CL,Update Existing. Basic Validation Rule added.,Harsh,48640
+135,Codelist,Local_Core_CH_RD,Business_View_Cen_L_CH_CL,Update Existing. Basic Validation Rule added.,Harsh,48640
+136,Codelist,Local_Core_CH_RD,Currency_Codes_Cen_L_CH_CL,Update Existing. Basic Validation Rule added.,Harsh,48640
+137,Codelist,Local_Core_CH_RD,DAC_Granularity_Calculation_Cen_L_CH_CL,Update Existing. Basic Validation Rule added.,Harsh,48640
+138,Codelist,Local_Core_CH_RD,DAC_Granularity_Parameter_Cen_L_CH_CL,Update Existing. Basic Validation Rule added.,Harsh,48640
+139,Codelist,Local_Core_CH_RD,DAC_PARRELPAT_Cen_L_Object_CH_CL,Update Existing. Basic Validation Rule added.,Harsh,48640
+140,Codelist,Local_Core_CH_RD,DAC_Pre_Coverage_Flag_Cen_L_CH_CL,Update Existing. Basic Validation Rule added.,Harsh,48640
+141,Codelist,Local_Core_CH_RD,DAC_Type_Of_Payment_Cen_L_CH_CL,Update Existing. Basic Validation Rule added.,Harsh,48640
+142,Codelist,Local_Core_CH_RD,Data_Points_Cen_L_CH_Object_CL,Update Existing. Basic Validation Rule added.,Harsh,48640
+143,Codelist,Local_Core_CH_RD,Division_Add_Cen_L_CH_CL,Update Existing. Basic Validation Rule added.,Harsh,48640
+144,Codelist,Local_Core_CH_RD,Division_Cen_L_CH_CL,Update Existing. Basic Validation Rule added.,Harsh,48640
+145,Codelist,Local_Core_CH_RD,Division_Product_Cen_L_CH_CL,Update Existing. Basic Validation Rule added.,Harsh,48640
+146,Codelist,Local_Core_CH_RD,Feeder_Account_Cen_L_CH_CL,Update Existing. Basic Validation Rule added.,Harsh,48640
+147,Codelist,Local_Core_CH_RD,Feeder_System_Cen_L_CH_CL,Update Existing. Basic Validation Rule added.,Harsh,48640
+148,Codelist,Local_Core_CH_RD,Fleet_Type_Cen_L_CH_CL,Update Existing. Basic Validation Rule added.,Harsh,48640
+149,Codelist,Local_Core_CH_RD,IFRS_17_Measurement_Model_Cen_L_CH_CL,Update Existing. Basic Validation Rule added.,Harsh,48640
+150,Codelist,Local_Core_CH_RD,Indirect_Impact_Cen_L_CH_CL,Update Existing. Basic Validation Rule added.,Harsh,48640
+151,Codelist,Local_Core_CH_RD,Ledger_Group_Cen_L_CH_CL,Update Existing. Basic Validation Rule added.,Harsh,48640
+152,Codelist,Local_Core_CH_RD,Legal_Entity_Cen_L_CH_CL,Update Existing. Basic Validation Rule added.,Harsh,48640
+153,Codelist,Local_Core_CH_RD,Local_Account_Information_Cen_L_CH_CL,Update Existing. Basic Validation Rule added.,Harsh,48640
+154,Codelist,Local_Core_CH_RD,Local_Customer_Segment_Cen_L_CH_CL,Update Existing. Basic Validation Rule added.,Harsh,48640
+155,Codelist,Local_Core_CH_RD,Local_Distribution_Channel_2_Cen_L_CH_CL,Update Existing. Basic Validation Rule added.,Harsh,48640
+156,Codelist,Local_Core_CH_RD,Local_Distribution_Channel_Cen_L_CH_CL,Update Existing. Basic Validation Rule added.,Harsh,48640
+157,Codelist,Local_Core_CH_RD,Local_Jurisdictional_LoB_2_Cen_L_CH_CL,Update Existing. Basic Validation Rule added.,Harsh,48640
+158,Codelist,Local_Core_CH_RD,Local_Jurisdictional_LoB_Cen_L_CH_CL,Update Existing. Basic Validation Rule added.,Harsh,48640
+159,Codelist,Local_Core_CH_RD,Local_LoB_2_Cen_L_CH_CL,Update Existing. Basic Validation Rule added.,Harsh,48640
+160,Codelist,Local_Core_CH_RD,Main_Division_Add_Cen_L_CH_CL,Update Existing. Basic Validation Rule added.,Harsh,48640
+161,Codelist,Local_Core_CH_RD,Main_Division_Cen_L_CH_CL,Update Existing. Basic Validation Rule added.,Harsh,48640
+162,Codelist,Local_Core_CH_RD,Main_Division_Product_Cen_L_CH_CL,Update Existing. Basic Validation Rule added.,Harsh,48640
+163,Codelist,Local_Core_CH_RD,Payment_Mode_Cen_L_CH_CL,Update Existing. Basic Validation Rule added.,Harsh,48640
+164,Codelist,Local_Core_CH_RD,Payment_Type_Cen_L_CH_CL,Update Existing. Basic Validation Rule added.,Harsh,48640
+165,Codelist,Local_Core_CH_RD,Policy_Status_Cen_L_CH_CL,Update Existing. Basic Validation Rule added.,Harsh,48640
+166,Codelist,Local_Core_CH_RD,Policy_Termination_Type_Cen_L_CH_CL,Update Existing. Basic Validation Rule added.,Harsh,48640
+167,Codelist,Local_Core_CH_RD,Posting_Direction_Cen_L_CH_CL,Update Existing. Basic Validation Rule added.,Harsh,48640
+168,Codelist,Local_Core_CH_RD,Product_Group_Cen_L_CH_CL,Update Existing. Basic Validation Rule added.,Harsh,48640
+169,Codelist,Local_Core_CH_RD,Product_Hierarchy_Cen_L_CH_CL,Update Existing. Basic Validation Rule added.,Harsh,48640
+170,Codelist,Local_Core_CH_RD,Profit_Center_Cen_L_CH_CL,Update Existing. Basic Validation Rule added.,Harsh,48640
+171,Codelist,Local_Core_CH_RD,Provision_Type_Cen_L_CH_CL,Update Existing. Basic Validation Rule added.,Harsh,48640
+172,Codelist,Local_Core_CH_RD,Reporting_Account_Cen_L_CH_CL,Update Existing. Basic Validation Rule added.,Harsh,48640
+173,Codelist,Local_Core_CH_RD,Risk_Group_Cen_L_CH_CL,Update Existing. Basic Validation Rule added.,Harsh,48640
+174,Codelist,Local_Core_CH_RD,Service_Type_Cen_L_CH_CL,Update Existing. Basic Validation Rule added.,Harsh,48640
+175,Codelist,Local_Core_CH_RD,Termination_Group_Cen_L_CH_CL,Update Existing. Basic Validation Rule added.,Harsh,48640
+176,Codelist,Local_Core_CH_RD,Transaction_Type_Cen_L_CH_CL,Update Existing. Basic Validation Rule added.,Harsh,48640
+177,Codelist,Local_Core_CH_RD,VAT_Code_Con_L_CH_CL,Update Existing. Basic Validation Rule added.,Harsh,48640
+178,Codelist,Local_Core_FR_RD,Account_Responsible_Cen_L_FR_CL,Update Existing. Basic Validation Rule added.,Harsh,48640
+179,Codelist,Local_Core_FR_RD,Business_View_Cen_L_FR_CL,Update Existing. Basic Validation Rule added.,Harsh,48640
+180,Codelist,Local_Core_FR_RD,Company_Code_Cen_L_FR_CL,Update Existing. Basic Validation Rule added.,Harsh,48640
+181,Codelist,Local_Core_FR_RD,Cost_Center_Cen_L_FR_CL,Update Existing. Basic Validation Rule added.,Harsh,48640
+182,Codelist,Local_Core_FR_RD,Currency_Codes_Cen_L_FR_CL,Update Existing. Basic Validation Rule added.,Harsh,48640
+183,Codelist,Local_Core_FR_RD,DAC_Granularity_Calculation_Cen_L_FR_CL,Update Existing. Basic Validation Rule added.,Harsh,48640
+184,Codelist,Local_Core_FR_RD,DAC_Granularity_Parameter_Cen_L_FR_CL,Update Existing. Basic Validation Rule added.,Harsh,48640
+185,Codelist,Local_Core_FR_RD,DAC_Pre_Coverage_Flag_Cen_L_FR_CL,Update Existing. Basic Validation Rule added.,Harsh,48640
+186,Codelist,Local_Core_FR_RD,DAC_Type_Of_Payment_Cen_L_FR_CL,Update Existing. Basic Validation Rule added.,Harsh,48640
+187,Codelist,Local_Core_FR_RD,Data_Points_Cen_L_FR_Object_CL,Update Existing. Basic Validation Rule added.,Harsh,48640
+188,Codelist,Local_Core_FR_RD,Distribution_Channel_Cen_L_FR_CL,Update Existing. Basic Validation Rule added.,Harsh,48640
+189,Codelist,Local_Core_FR_RD,Division_Add_Cen_L_FR_CL,Update Existing. Basic Validation Rule added.,Harsh,48640
+190,Codelist,Local_Core_FR_RD,Event_Type_Cen_L_FR_CL,Update Existing. Basic Validation Rule added.,Harsh,48640
+191,Codelist,Local_Core_FR_RD,Feeder_System_Cen_L_FR_CL,Update Existing. Basic Validation Rule added.,Harsh,48640
+192,Codelist,Local_Core_FR_RD,Guarantee_Cen_L_FR_CL,Update Existing. Basic Validation Rule added.,Harsh,48640
+193,Codelist,Local_Core_FR_RD,Historical_Portfolio_Cen_L_FR_CL,Update Existing. Basic Validation Rule added.,Harsh,48640
+194,Codelist,Local_Core_FR_RD,IFRS_17_Measurement_Model_Cen_L_FR_CL,Update Existing. Basic Validation Rule added.,Harsh,48640
+195,Codelist,Local_Core_FR_RD,IFRS_17_Portfolio_Cen_L_FR_CL,Update Existing. Basic Validation Rule added.,Harsh,48640
+196,Codelist,Local_Core_FR_RD,Indirect_Impact_Cen_L_FR_CL,Update Existing. Basic Validation Rule added.,Harsh,48640
+197,Codelist,Local_Core_FR_RD,Ledger_Group_Cen_L_FR_CL,Update Existing. Basic Validation Rule added.,Harsh,48640
+198,Codelist,Local_Core_FR_RD,Legal_Entity_Cen_L_FR_CL,Update Existing. Basic Validation Rule added.,Harsh,48640
+199,Codelist,Local_Core_FR_RD,Local_Account_Information_Cen_L_FR_CL,Update Existing. Basic Validation Rule added.,Harsh,48640
+200,Codelist,Local_Core_FR_RD,Local_Business_Type_Cen_L_FR_CL,Update Existing. Basic Validation Rule added.,Harsh,48640
+201,Codelist,Local_Core_FR_RD,Local_Customer_Segment_Cen_L_FR_CL,Update Existing. Basic Validation Rule added.,Harsh,48640
+202,Codelist,Local_Core_FR_RD,Local_Jurisdictional_LoB_Cen_L_FR_CL,Update Existing. Basic Validation Rule added.,Harsh,48640
+203,Codelist,Local_Core_FR_RD,Local_LoB_Cen_L_FR_CL,Update Existing. Basic Validation Rule added.,Harsh,48640
+204,Codelist,Local_Core_FR_RD,Policy_Termination_Type_Cen_L_FR_CL,Update Existing. Basic Validation Rule added.,Harsh,48640
+205,Codelist,Local_Core_FR_RD,Posting_Direction_Cen_L_FR_CL,Update Existing. Basic Validation Rule added.,Harsh,48640
+206,Codelist,Local_Core_FR_RD,Product_Group_Cen_L_FR_CL,Update Existing. Basic Validation Rule added.,Harsh,48640
+207,Codelist,Local_Core_FR_RD,Profit_Center_Cen_L_FR_CL,Update Existing. Basic Validation Rule added.,Harsh,48640
+208,Codelist,Local_Core_FR_RD,Reporting_Account_Cen_L_FR_CL,Update Existing. Basic Validation Rule added.,Harsh,48640
+209,Codelist,Local_Core_FR_RD,Risk_Group_Cen_L_FR_CL,Update Existing. Basic Validation Rule added.,Harsh,48640
+210,Codelist,Local_Core_FR_RD,SAP_Segment_Cen_L_FR_CL,Update Existing. Basic Validation Rule added.,Harsh,48640
+211,Codelist,Local_Core_FR_RD,Support_Type_Cen_L_FR_CL,Update Existing. Basic Validation Rule added.,Harsh,48640
+212,Codelist,Local_Core_FR_RD,Trading_Partner_Cen_L_FR_CL,Update Existing. Basic Validation Rule added.,Harsh,48640
+213,Codelist,Local_Core_FR_RD,Transaction_Type_Cen_L_FR_CL,Update Existing. Basic Validation Rule added.,Harsh,48640
+214,Codelist,Local_Core_FR_RD,VAT_Code_Con_L_FR_CL,Update Existing. Basic Validation Rule added.,Harsh,48640
+215,Codelist,Local_Core_IT_RD,Local_Customer_Segment_Cen_L_IT_CL,Update Existing. Basic Validation Rule added.,Harsh,48640
+216,Codelist,Local_Core_IT_RD,Agency_Code_Cen_L_IT_CL,Update Existing. Basic Validation Rule added.,Harsh,48640
+217,Codelist,Local_Core_IT_RD,Asset_Type_Cen_L_IT_CL,Update Existing. Basic Validation Rule added.,Harsh,48640
+218,Codelist,Local_Core_IT_RD,Business_Area_Cen_L_IT_CL,Update Existing. Basic Validation Rule added.,Harsh,48640
+219,Codelist,Local_Core_IT_RD,Business_View_Cen_L_IT_CL,Update Existing. Basic Validation Rule added.,Harsh,48640
+220,Codelist,Local_Core_IT_RD,Coassurance_Type_Cen_L_IT_CL,Update Existing. Basic Validation Rule added.,Harsh,48640
+221,Codelist,Local_Core_IT_RD,Company_Code_Legacy_System_Cen_L_IT_CL,Update Existing. Basic Validation Rule added.,Harsh,48640
+222,Codelist,Local_Core_IT_RD,Currency_Codes_Cen_L_IT_CL,Update Existing. Basic Validation Rule added.,Harsh,48640
+223,Codelist,Local_Core_IT_RD,DAC_Granularity_Calculation_Cen_L_IT_CL,Update Existing. Basic Validation Rule added.,Harsh,48640
+224,Codelist,Local_Core_IT_RD,DAC_Granularity_Parameter_Cen_L_IT_CL,Update Existing. Basic Validation Rule added.,Harsh,48640
+225,Codelist,Local_Core_IT_RD,DAC_PARRELPAT_Cen_L_Object_IT_CL,Update Existing. Basic Validation Rule added.,Harsh,48640
+226,Codelist,Local_Core_IT_RD,DAC_Pre-coverage_Flag_Cen_L_IT_CL,Update Existing. Basic Validation Rule added.,Harsh,48640
+227,Codelist,Local_Core_IT_RD,DAC_Type_of_Payment_Cen_L_IT_CL,Update Existing. Basic Validation Rule added.,Harsh,48640
+228,Codelist,Local_Core_IT_RD,Division_Add_Cen_L_IT_CL,Update Existing. Basic Validation Rule added.,Harsh,48640
+229,Codelist,Local_Core_IT_RD,Division_Cen_L_IT_CL,Update Existing. Basic Validation Rule added.,Harsh,48640
+230,Codelist,Local_Core_IT_RD,Feeder_System_Cen_L_IT_CL,Update Existing. Basic Validation Rule added.,Harsh,48640
+231,Codelist,Local_Core_IT_RD,Financial_Asset_Type_Cen_L_IT_CL,Update Existing. Basic Validation Rule added.,Harsh,48640
+232,Codelist,Local_Core_IT_RD,IFRS_17_Annual_Cohort_Cen_L_IT_CL,Update Existing. Basic Validation Rule added.,Harsh,48640
+233,Codelist,Local_Core_IT_RD,IFRS_17_Measurement_Model_Cen_L_IT_CL,Update Existing. Basic Validation Rule added.,Harsh,48640
+234,Codelist,Local_Core_IT_RD,IFRS_17_Portfolio_Cen_L_IT_CL,Update Existing. Basic Validation Rule added.,Harsh,48640
+235,Codelist,Local_Core_IT_RD,IFRS_17_Profitability_Bucket_Cen_L_IT_CL,Update Existing. Basic Validation Rule added.,Harsh,48640
+236,Codelist,Local_Core_IT_RD,IFRS_17_Unit_of_Account_Cen_L_IT_CL,Update Existing. Basic Validation Rule added.,Harsh,48640
+237,Codelist,Local_Core_IT_RD,Indirect_Impact_Cen_L_IT_CL,Update Existing. Basic Validation Rule added.,Harsh,48640
+238,Codelist,Local_Core_IT_RD,Ledger_Group_Cen_L_IT_CL,Update Existing. Basic Validation Rule added.,Harsh,48640
+239,Codelist,Local_Core_IT_RD,Legal_Entity_Cen_L_IT_CL,Update Existing. Basic Validation Rule added.,Harsh,48640
+240,Codelist,Local_Core_IT_RD,Data_Points_Cen_L_IT_Object_CL,Update Existing. Basic Validation Rule added.,Harsh,48640
+241,Codelist,Local_Core_IT_RD,LoB_Event_Cen_L_IT_CL,Update Existing. Basic Validation Rule added.,Harsh,48640
+242,Codelist,Local_Core_IT_RD,Local_Business_Type_Cen_L_IT_CL,Update Existing. Basic Validation Rule added.,Harsh,48640
+243,Codelist,Local_Core_IT_RD,Local_Distribution_Channel_Cen_L_IT_CL,Update Existing. Basic Validation Rule added.,Harsh,48640
+244,Codelist,Local_Core_IT_RD,Local_Jurisdictional_LoB_Cen_L_IT_CL,Update Existing. Basic Validation Rule added.,Harsh,48640
+245,Codelist,Local_Core_IT_RD,Local_LoB_2_Cen_L_IT_CL,Update Existing. Basic Validation Rule added.,Harsh,48640
+246,Codelist,Local_Core_IT_RD,Local_LoB_Cen_L_IT_CL,Update Existing. Basic Validation Rule added.,Harsh,48640
+247,Codelist,Local_Core_IT_RD,Posting_Direction_Cen_L_IT_CL,Update Existing. Basic Validation Rule added.,Harsh,48640
+248,Codelist,Local_Core_IT_RD,Profit_Center_Cen_L_IT_CL,Update Existing. Basic Validation Rule added.,Harsh,48640
+249,Codelist,Local_Core_IT_RD,Reporting_Account_Cen_L_IT_CL,Update Existing. Basic Validation Rule added.,Harsh,48640
+250,Codelist,Local_Core_IT_RD,SAP_Segment_Cen_L_IT_CL,Update Existing. Basic Validation Rule added.,Harsh,48640
+251,Codelist,Local_Core_IT_RD,Sofia_PITECO_Allocation_Cen_L_IT_Object_CL,Update Existing. Basic Validation Rule added.,Harsh,48640
+252,Codelist,Local_Core_IT_RD,Trading_Partner_Cen_L_IT_CL,Update Existing. Basic Validation Rule added.,Harsh,48640
+253,Codelist,Local_Core_IT_RD,Transaction_Type_Cen_L_IT_CL,Update Existing. Basic Validation Rule added.,Harsh,48640
+254,Codelist,Local_Core_IT_RD,Treaty_Type_Cen_L_IT_CL,Update Existing. Basic Validation Rule added.,Harsh,48640
+255,Codelist,Local_Core_IT_RD,Type_of_Relationship_Cen_L_IT_CL,Update Existing. Basic Validation Rule added.,Harsh,48640
+256,Codelist,Local_Core_IT_RD,Currency_Codes_Con_L_IT_CL,Update Existing. Basic Validation Rule added.,Harsh,48640
+257,Codelist,Local_Core_IT_RD,VAT_Code_Con_L_IT_CL,Update Existing. Basic Validation Rule added.,Harsh,48640
+258,Codelist,Local_Core_SERE_RD,BT_Posting_Direction_Cen_L_SERE_CL,Update Existing. Basic Validation Rule added.,Harsh,48640
+259,Codelist,Local_Core_SERE_RD,Business_Type_Cen_L_SERE_CL,Update Existing. Basic Validation Rule added.,Harsh,48640
+260,Codelist,Local_Core_SERE_RD,Company_Code_Cen_L_SERE_CL,Update Existing. Basic Validation Rule added.,Harsh,48640
+261,Codelist,Local_Core_SERE_RD,Cost_Center_Cen_L_SERE_CL,Update Existing. Basic Validation Rule added.,Harsh,48640
+262,Codelist,Local_Core_SERE_RD,Current_Year_Prev_Year_Cen_L_SERE_CL,Update Existing. Basic Validation Rule added.,Harsh,48640
+263,Codelist,Local_Core_SERE_RD,IFRS_Measurement_Model_Cen_L_SERE_CL,Update Existing. Basic Validation Rule added.,Harsh,48640
+264,Codelist,Local_Core_SERE_RD,Local_LoB_Cen_L_SERE_CL,Update Existing. Basic Validation Rule added.,Harsh,48640
+265,Codelist,Local_Core_SERE_RD,Profit_Center_Cen_L_SERE_CL,Update Existing. Basic Validation Rule added.,Harsh,48640
+266,Codelist,Local_Core_SERE_RD,Regime_Cen_L_SERE_CL,Update Existing. Basic Validation Rule added.,Harsh,48640
+267,Codelist,Local_Core_SERE_RD,Segment_Cen_L_SERE_CL,Update Existing. Basic Validation Rule added.,Harsh,48640
+268,Codelist,Global_Core_Hierarchy_RD,Asset_Type_Hier_Cen_G_CL,Update Existing. Basic Validation Rule added.,Harsh,48640
+269,Codelist,Global_Core_Hierarchy_RD,Customer_Segment_Hier_Cen_G_CL,Update Existing. Basic Validation Rule added.,Harsh,48640
+270,Codelist,Global_Core_Hierarchy_RD,Distribution_Channel_Hier_Cen_G_CL,Update Existing. Basic Validation Rule added.,Harsh,48640
+271,Codelist,Global_Core_Hierarchy_RD,Local_Jurisdictional_LOB_Hier_Cen_G_CL,Update Existing. Basic Validation Rule added.,Harsh,48640
+272,Codelist,Global_Core_Hierarchy_RD,Local_LOB_Hier_Cen_G_CL,Update Existing. Basic Validation Rule added.,Harsh,48640
+273,Codelist,Local_Core_Hierarchy_CH_RD,Agency_Code_Hier_Cen_L_CH_CL,Update Existing. Basic Validation Rule added.,Harsh,48640
+274,Codelist,Local_Core_Hierarchy_CH_RD,Business_View_Hier_Cen_L_CH_CL,Update Existing. Basic Validation Rule added.,Harsh,48640
+275,Codelist,Local_Core_Hierarchy_CH_RD,Company_Code_Hier_Cen_L_CH_CL,Update Existing. Basic Validation Rule added.,Harsh,48640
+276,Codelist,Local_Core_Hierarchy_CH_RD,Division_Add_Hier_Cen_L_CH_CL,Update Existing. Basic Validation Rule added.,Harsh,48640
+277,Codelist,Local_Core_Hierarchy_CH_RD,Division_Product_Hier_Cen_L_CH_CL,Update Existing. Basic Validation Rule added.,Harsh,48640
+278,Codelist,Local_Core_Hierarchy_CH_RD,Fleet_Type_Hier_Cen_L_CH_CL,Update Existing. Basic Validation Rule added.,Harsh,48640
+279,Codelist,Local_Core_Hierarchy_CH_RD,Jurisdictional_LOB_2_Hier_Cen_L_CH_CL,Update Existing. Basic Validation Rule added.,Harsh,48640
+280,Codelist,Local_Core_Hierarchy_CH_RD,Jurisdictional_LOB_Hier_Cen_L_CH_CL,Update Existing. Basic Validation Rule added.,Harsh,48640
+281,Codelist,Local_Core_Hierarchy_CH_RD,Local_Distribution_Channel_2_Hier_Cen_L_CH_CL,Update Existing. Basic Validation Rule added.,Harsh,48640
+282,Codelist,Local_Core_Hierarchy_CH_RD,Local_LOB_2_Hier_Cen_L_CH_CL,Update Existing. Basic Validation Rule added.,Harsh,48640
+283,Codelist,Local_Core_Hierarchy_CH_RD,Main_Division_Add_Hier_Cen_L_CH_CL,Update Existing. Basic Validation Rule added.,Harsh,48640
+284,Codelist,Local_Core_Hierarchy_CH_RD,Main_Division_Hier_Cen_L_CH_CL,Update Existing. Basic Validation Rule added.,Harsh,48640
+285,Codelist,Local_Core_Hierarchy_CH_RD,Main_Division_Product_Hier_Cen_L_CH_CL,Update Existing. Basic Validation Rule added.,Harsh,48640
+286,Codelist,Local_Core_Hierarchy_CH_RD,Payment_Type_Hier_Cen_L_CH_CL,Update Existing. Basic Validation Rule added.,Harsh,48640
+287,Codelist,Local_Core_Hierarchy_CH_RD,Policy_Termination_Type_Hier_Cen_L_CH_CL,Update Existing. Basic Validation Rule added.,Harsh,48640
+288,Codelist,Local_Core_Hierarchy_CH_RD,Product_Group_Hier_Cen_L_CH_CL,Update Existing. Basic Validation Rule added.,Harsh,48640
+289,Codelist,Local_Core_Hierarchy_CH_RD,Product_Hier_Cen_L_CH_CL,Update Existing. Basic Validation Rule added.,Harsh,48640
+290,Codelist,Local_Core_Hierarchy_CH_RD,Risk_Group_Hier_Cen_L_CH_CL,Update Existing. Basic Validation Rule added.,Harsh,48640
+291,Codelist,Local_Core_Hierarchy_CH_RD,Service_Type_Hier_Cen_L_CH_CL,Update Existing. Basic Validation Rule added.,Harsh,48640
+292,Codelist,Local_Core_Hierarchy_CH_RD,Termination_Group_Hier_Cen_L_CH_CL,Update Existing. Basic Validation Rule added.,Harsh,48640
+293,Codelist,Local_Core_Hierarchy_FR_RD,Account_Responsible_Hier_Cen_L_FR_CL,Update Existing. Basic Validation Rule added.,Harsh,48640
+294,Codelist,Local_Core_Hierarchy_FR_RD,Asset_Type_Hier_Cen_L_FR_CL,Update Existing. Basic Validation Rule added.,Harsh,48640
+295,Codelist,Local_Core_Hierarchy_FR_RD,CustomerSegment_Hier_Cen_L_FR_CL,Update Existing. Basic Validation Rule added.,Harsh,48640
+296,Codelist,Local_Core_Hierarchy_FR_RD,DistributionChannel_Hier_Cen_L_FR_CL,Update Existing. Basic Validation Rule added.,Harsh,48640
+297,Codelist,Local_Core_Hierarchy_FR_RD,Event_Type_Hier_Cen_L_FR_CL,Update Existing. Basic Validation Rule added.,Harsh,48640
+298,Codelist,Local_Core_Hierarchy_FR_RD,Indirect_Impact_Hier_Cen_L_FR_CL,Update Existing. Basic Validation Rule added.,Harsh,48640
+299,Codelist,Local_Core_Hierarchy_FR_RD,Local_Jurisdictional_LOB_Hier_Cen_L_FR_CL,Update Existing. Basic Validation Rule added.,Harsh,48640
+300,Codelist,Local_Core_Hierarchy_FR_RD,Local_LOB_Hier_Cen_L_FR_CL,Update Existing. Basic Validation Rule added.,Harsh,48640
+301,Codelist,Local_Core_Hierarchy_FR_RD,LocalJurisdictional_LOB_Hier_Cen_L_FR_CL,Update Existing. Basic Validation Rule added.,Harsh,48640
+302,Codelist,Local_Core_Hierarchy_FR_RD,LocalJurisdictionalLOB_Hier_Cen_L_FR_CL,Update Existing. Basic Validation Rule added.,Harsh,48640
+303,Codelist,Local_Core_Hierarchy_FR_RD,Account_Hier_Con_L_FR_CL,Update Existing. Basic Validation Rule added.,Harsh,48640
+304,Codelist,Local_Core_Hierarchy_FR_RD,Cost_Center_Hier_Con_L_FR_CL,Update Existing. Basic Validation Rule added.,Harsh,48640
+305,Codelist,Local_Core_Hierarchy_FR_RD,Functional_Area_Hier_Con_L_FR_CL,Update Existing. Basic Validation Rule added.,Harsh,48640
+306,Codelist,Local_Core_Hierarchy_FR_RD,Profit_Center_Hier_Con_L_FR_CL,Update Existing. Basic Validation Rule added.,Harsh,48640
+1,Codelist,Global_Core_RD,Reversal_of_Actuals_Cen_G_CL,New,Harsh,50796
+2,Codelist,Global_Core_RD,Result_Type_Cen_G_CL,Updated Existing,Harsh,50796
+3,Codelist,Global_Core_RD,Result_Data_Area_Cen_G_CL,Updated Existing,Harsh,50796
+4,Codelist,Global_Core_RD,Regime_Cen_G_CL,New,Harsh,50796
+5,Codelist,Global_Core_RD,Portfolio_Category_Cen_G_CL,Updated Existing,Harsh,50796
+6,Codelist,Global_Core_RD,Portfolio_Status_Cen_G_CL,Updated Existing,Harsh,50796
+7,Codelist,Global_Core_RD,Original_Settlement_Period_Cen_G_CL,New,Harsh,50796
+8,Codelist,Global_Core_RD,Change_In_Reserves_Startvalue_Mark_Cen_G_CL,New,Harsh,50796
+9,Codelist,Global_Core_RD,Subaccount_Category_Cen_G_CL,New,Harsh,50796
+10,Codelist,Global_Core_Base_RD,Category_Name_Cen_G_CL,Update data from the file in Reference Folder,Harsh,50796
+11,Ingress Job,SimpliFi_RDM_CDI\IDL_Ingress,Ingress_Global_RD_IDL (TF_Import_Global_RD_ID),Updated Existing,Harsh,50796
+12,Egress Job,SimpliFi_RDM_CDI\Export_To_DP_Global_Category,Export_global_to_dp_wave1_part1 (TF_export_global_to_dp_wave1_part1),Updated Existing,Harsh,50796
+1,Codelist,Global_Core_RD,Fiscal_Year_Variant_Con_G_CL,New,Vivek,50797
+2,Codelist,Global_Core_RD,Accounting_Standards_Con_G_CL,New,Vivek,50797
+3,Codelist,Global_Core_RD,Plan_Version_Con_G_CL,New,Vivek,50797
+4,Codelist,Global_Core_RD,Reversal_Con_G_CL,New,Vivek,50797
+5,Codelist,Global_Core_RD,Reversal_Reason_Con_G_CL,New,Vivek,50797
+6,Codelist,Global_Core_RD,State_Central_Bank_Indicator_Con_G_Object_CL ,New,Vivek,50797
+1,Codelist,Global_Core_RD,Subaccount_Type_Con_G_CL,New,Bapiraju,50795
+2,Codelist,Global_Core_RD,FPG_Source_System_Con_G_CL,New,Bapiraju,50795
+3,Codelist,Global_Core_RD,Process_Category_Con_G_CL,New,Bapiraju,50795
+4,Codelist,Global_Core_RD,Transaction_Type_Credit_Debit_Con_G_CL,New,Bapiraju,50795
+5,Codelist,Global_Core_RD,RI_Contract_Attribute_Con_G_CL,New,Bapiraju,50795
+6,Codelist,Global_Core_RD,Year_Con_G_CL,New,Bapiraju,50795
+7,Codelist,Global_Core_RD,Object_type_Con_G_CL,New,Bapiraju,50795
+8,Codelist,Global_Core_RD,Insurance_Product_Key_Con_G_CL,New,Bapiraju,50795
+9,Codelist,Global_Core_RD,IFRS_17_Measurement_Model_Con_G_CL,New,Bapiraju,50795
+10,Codelist,Global_Core_RD,Financial_Year_Begin_End_Con_G_CL,New,Bapiraju,50795
+11,Codelist,Global_Core_RD,Co_Insurance_Key_Con_G_CL,New,Bapiraju,50795
+12,Codelist,Global_Core_RD,Closing_ID_Con_G_CL,New,Bapiraju,50795
+13,Codelist,Global_Core_RD,CARD_NO_CARD_Con_G_CL,New,Bapiraju,50795
+14,Codelist,Global_Core_RD,Branch_Code_Con_G_CL,New,Bapiraju,50795
+15,Codelist,Global_Core_RD,Accounting_Event_Type_Con_G_CL,New,Bapiraju,50795
+16,Codelist,Global_Core_RD,Accounting_Event_Category_Con_G_CL,New,Bapiraju,50795
