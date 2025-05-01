@@ -1,0 +1,50 @@
+#Application folder
+|-app
+|--debug_utils - separate scripts and methods for debug
+
+#Task for export - import:
+|-ci_cd_task
+|--dev_to_qa
+|---<list_objects>.csv
+    (only one file or the first one from the list will be taken and upon completion of the process - moved to the "log_ci_cd_task" folder)
+
+#System variables:
+|-env
+|--.env_dev
+|--.env_qa
+
+#Storage of files for export and subsequent import
+|-export_to_import
+|--dev_to_qa
+|---<timestamp>
+    (the "timestamp" directory is "session_id")
+|----<object_name>-<timestamp>.zip
+
+#Logging:
+|-log
+|--log_ci_cd_session
+|---<timestamp>.log
+    (full log of all step of export and import within one session based on the list of objects from one CSV file in the directory "ci_cd_task" )
+
+|--log_ci_cd_task
+|---<timestamp>
+|----<file_name->.csv
+    (We save information about session_id and the time of the last action (export or import) of the file name for export and the result of import)
+    File structure: session_id, ei_direction (dev_to_qa, qa_to_prod), row_timestamp, type, folder, asset_name, export_ststus, export_file_name, import_status
+
+|--log_export
+|---<timestamp>
+    (folder "timestamp - this is "session_id", in which for each object from the list for export, a separate file with detailed logs)
+|----ex_<object_name>-<timestamp>.txt
+
+|--log_import
+|---<timestamp>
+    (folder in which a separate file with detailed logs is stored for each object from the export list)
+|----im_<object_name>-<timestamp>.txt
+
+#Virtual environment:
+|-venv
+
+#Previous versions of the project:
+|-version_1
+|-version_2
