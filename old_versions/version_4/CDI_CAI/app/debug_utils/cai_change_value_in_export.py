@@ -132,9 +132,7 @@ def cai_change_xml(path_export_folder: str, path_export_original: str, export_fi
         xml_full_tmp_path = xml_full_tmp_path.replace("\\", "/")
 
         with open(xml_full_tmp_path, 'r', encoding='utf-8') as f:
-            content = f.read() #.decode('utf-8')
-            #print("\n XML-file content:\n")
-            #print(content)
+            content = f.read() 
 
         print("---------------------------------------------------------------")
         print(f"old_new_value: {dict_old_new_value}")
